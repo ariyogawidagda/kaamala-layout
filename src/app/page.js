@@ -6,6 +6,7 @@ import Header from "./components/header";
 import Hero from "./components/hero";
 import Offers from "./components/offers";
 import Room from "./components/rooom";
+import SectionBookM from "./components/sectionbook";
 
 export default function HomePage() {
   return (
@@ -57,6 +58,7 @@ export default function HomePage() {
         <Gallery />
       </section>
       <Footer />
+      <SectionBookM />
     </>
   );
 }
