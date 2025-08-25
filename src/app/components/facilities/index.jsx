@@ -120,10 +120,10 @@ export default function Facilities() {
               >
                 <div className="img-container relative overflow-hidden">
                   <img
-                    src={"/free-club.webp"}
+                    src={"/tjc.webp"}
                     alt={"#"}
                     loading="lazy"
-                    className="w-full  max-h-[550px] max-[560px]:h-[350px] object-cover object-center"
+                    className="w-full h-[550px] max-[560px]:h-[350px] object-cover object-center"
                   />
                 </div>
               </div>
