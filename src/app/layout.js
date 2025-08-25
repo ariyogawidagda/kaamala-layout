@@ -1,15 +1,34 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato, Arsenal, Playfair_Display } from "next/font/google";
+
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const playfair = Playfair_Display({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-playfair",
+});
+const lato = Lato({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-lato",
+  display: "swap",
+});
+const arsenal = Arsenal({
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-arsenal",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const getInlineThemeStyle = () => {
+  return {
+    "--headerColor": "#3C5160" || "",
+    "--footerColor": "#3C5160" || "",
+    "--contactColor": "#3C5160" || "",
+    "--btnHoverColor": "#2D3D49" || "",
+    "--primaryColor": "#3C5160" || "",
+    "--bodyColor": "#3C5160" || "",
+  };
+};
 
 export const metadata = {
   title: "Create Next App",
@@ -17,10 +36,12 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const inlineStyles = getInlineThemeStyle();
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${lato.variable} ${arsenal.variable}  ${playfair.variable} antialiased`}
+        style={inlineStyles}
       >
         {children}
       </body>
