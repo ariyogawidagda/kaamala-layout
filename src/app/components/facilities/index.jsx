@@ -136,20 +136,16 @@ export default function Facilities() {
                     className="text-[12px]  text-black uppercase tracking-[3.75px] "
                     style={{ fontFamily: "var(--font-arsenal)" }}
                   >
-                    Restaurant
+                    OUR FREE
                   </span>
                   <h2 className="text-[28px] tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
-                    Seven Paintings Ubud
+                    Free Club Entry
                   </h2>
                   <div className="descExperience">
                     <p className="text-[#1A1A1A]/70 leading-[180%] tracking-[0.5px]">
-                      Welcome to Seven Paintings Ubud, Bali’s premier dining
-                      experience. Immerse yourself in "Dineamation," a two-hour
-                      journey that blends art, storytelling, and culinary
-                      excellence. Savor a seven-course dinner with gourmet
-                      dishes, stunning 3D visuals, and captivating illusions.
-                      Here, you’re part of the artistic magic. Join us for once
-                      in a lifetime evening!
+                      Terms & Conditions Applied Free shuttle transportation
+                      from Property Ubud Area Only to The Jungle Club ( based on
+                      Schedule )
                     </p>
                   </div>
                   <div className="mt-[16px]">
