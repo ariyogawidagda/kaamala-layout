@@ -1,4 +1,4 @@
-import { Lato, Arsenal, Playfair_Display } from "next/font/google";
+import { Lato, Arsenal, Playfair_Display, Cormorant } from "next/font/google";
 
 import "./globals.css";
 const playfair = Playfair_Display({
@@ -17,6 +17,12 @@ const arsenal = Arsenal({
   weight: "400",
   variable: "--font-arsenal",
   display: "swap",
+});
+
+const cormorant = Cormorant({
+  subsets: ["latin"],
+  weight: ["300", "400", "500"],
+  variable: "--font-cormorant",
 });
 
 const getInlineThemeStyle = () => {
@@ -40,7 +46,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${lato.variable} ${arsenal.variable}  ${playfair.variable} antialiased`}
+        className={`${lato.variable} ${arsenal.variable}  ${playfair.variable}  ${cormorant.variable}  antialiased`}
         style={inlineStyles}
       >
         {children}

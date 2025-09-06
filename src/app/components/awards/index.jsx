@@ -5,8 +5,9 @@ const KalendarNew = dynamic(() => import("./kalendar"), {
   ssr: false,
 });
 import { useInView } from "react-intersection-observer";
-
+import { useState } from "react";
 export default function Awards() {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { ref, inView } = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -15,53 +16,62 @@ export default function Awards() {
     <>
       <section
         id="section2"
-        className="bg-[#FAF8F6] relative pb-[160px] max-[560px]:pb-[100px] "
+        className="bg-[#FAF8F6] relative pb-[100px] max-[560px]:pb-[70px] "
       >
         <div ref={ref} className="max-[900px]:hidden pt-[110px]">
           {inView ? <KalendarNew /> : <div style={{ height: 250 }} />}
         </div>
-        <div className="h-[180px] max-[560px]:h-[100px]" />
+        <div className="h-[150px] max-[560px]:h-[50px]" />
 
         <div className="container ">
           <div className="">
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[180%] text-[#1A1A1A]">
-              Luxury Experience to Remember
+              Kaamala Luxury Resort and Spa in Ubud
             </h1>
           </div>
-          <div className="flex justify-center items-center my-[60px] space-x-2">
+          {/* <div className="flex justify-center items-center my-[60px] space-x-2">
             <div className="w-[40px] h-[1px] bg-[#D4AF37]"></div>
             <div className="w-[6px] h-[6px] bg-[#D4AF37] rounded-full"></div>
             <div className="w-[40px] h-[1px] bg-[#D4AF37]"></div>
-          </div>
+          </div> */}
+          <div className="h-[70px] max-[560px]:h-[50px]"></div>
           {/* Deskripsi Resort */}
-          <div className="grid grid-cols-2 mt-[30px] gap-[40px] max-[560px]:grid-cols-1">
+          <div className="grid grid-cols-2 min-[768px]:mt-[30px] gap-[80px] max-[560px]:gap-[40px]  max-[560px]:grid-cols-1">
             <div className="space-y-4 text-center">
-              {/* <h2 className="text-[28px] tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
-                Kaamala Resort Ubud is one of the best resort for relaxing
-                retreat
-              </h2> */}
-              <p className="leading-[180%] tracking-[0.5px] text-[#1A1A1A]/70">
-                Kaamala Resort Ubud, an Ubud 5-star resort, is nestled among
-                lush rice fields and tropical forests, offering an exclusive
-                blend of luxury and nature. This serene retreat provides
-                unparalleled tranquility and romantic comfort, enhanced by
-                world-class facilities designed for an unforgettable stay in the
-                heart of Bali.
-              </p>
+              <img
+                src="/gtwo.webp"
+                alt="Luxury Resort Ubud"
+                className="w-full h-auto object-cover "
+              />
             </div>
-            <div className="space-y-4 text-center">
-              {/* <h2 className="text-[28px] tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
-                Kaamala Resort Ubud is One of the Best Resort for Relaxing
-                Retreat
-              </h2> */}
-              <p className="leading-[180%] tracking-[0.5px] text-[#1A1A1A]/70">
-                Our commitment is to make your honeymoon and holiday dreams a
-                reality, offering an oasis of serenity at a premier luxury
-                resort Ubud. Immerse yourself in more than just a stay—discover
-                a refined lifestyle with exceptional culinary delights,
-                world-class rejuvenation, and unparalleled tranquility amidst
-                Bali’s lush beauty.
+            <div className="space-y-5 flex flex-col justify-center items-center">
+              <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
+                A Lotus-Inspired Sanctuary of Purity and Harmony in Ubud
+              </h2>
+              <p
+                className={`leading-[180%] tracking-[0.5px] text-[#1A1A1A]/70 text-center transition-all duration-300 ${
+                  isExpanded ? "line-clamp-none" : "line-clamp-4"
+                }`}
+              >
+                Guided by the sacred spirit of the lotus, Kaamala Resort is a
+                living tribute to the unity of purity, soulfulness, romance, and
+                nature. As the lotus rises unstained from the mud, so too does
+                your journey here, where the weight of pain and stress gently
+                dissolves into stillness. In the serene heart of Ubud, your
+                senses are gracefully reawakened. Cradled by lush tropical
+                greenery, our villas and suites mirror the quiet beauty of
+                lotus, spaces where stillness breathes, emotions soften, and
+                every detail speaks of balance and intention. This is where
+                romance becomes sacred, and the soul rediscovers itself, held
+                gently in the quiet, unfolding grace of nature.
               </p>
+
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className="cursor-pointer text-[#1A1A1A]/70  mt-2 tracking-[1.2px] text-[14px]  border-b-[1px] pb-1 border-[#1A1A1A]/40"
+              >
+                {isExpanded ? "Show Less" : "More"}
+              </button>
             </div>
           </div>
         </div>

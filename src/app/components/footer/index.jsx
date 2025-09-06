@@ -103,11 +103,6 @@ export default function Footer() {
             <div className=" col-span-2 max-[560px]:col-span-6 max-[560px]:mt-[40px]">
               <ul className="text-white flex flex-col gap-[14px] max-[560px]:text-center ">
                 <li>
-                  <Link prefetch={false} href={"#"}>
-                    Links
-                  </Link>
-                </li>
-                <li>
                   <Link
                     prefetch={false}
                     href={"https://inivie.com/marketinginquiry"}
@@ -151,20 +146,6 @@ export default function Footer() {
             </div>
             <div className=" max-[768px]:mt-[40px] col-span-3 max-[560px]:col-span-12">
               <div>
-                <div>
-                  <p className="text-[15px] text-white mb-[10px] max-[560px]:text-center ">
-                    Keep in touch with Kaamala Resort
-                  </p>
-                  <div className="flex max-min-w-1200:flex-col max-min-w-1200:gap-[5px]">
-                    <a
-                      href="/subscribe"
-                      className="py-[12px] w-full text-center px-[24px] inline-block border-white border-[1px] text-white hover:bg-[#2D3D49] hover:border-[var(--primaryColor)]  max-min-w-1200:text-center duration-300 ease-in"
-                      aria-label="Link Booking"
-                    >
-                      Subscribe
-                    </a>
-                  </div>
-                </div>
                 <div className="mt-[20px]">
                   <p className="text-[15px] text-white mb-[10px] max-[560px]:text-center">
                     Join Our Membership for Exclusive Rewards!

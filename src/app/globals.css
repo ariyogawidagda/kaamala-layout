@@ -218,6 +218,7 @@ h3,
 h4,
 h5 {
   font-family: var(--font-playfair), serif;
+  font-weight: 400;
 }
 
 .swiper-button-prev::after,
@@ -450,4 +451,23 @@ h5 {
   a {
     font-size: 14px;
   }
+}
+.custom-pagination .swiper-pagination-bullet {
+  background: #d1d5db; /* abu default */
+  opacity: 1;
+}
+.custom-pagination .swiper-pagination-bullet-active {
+  background: #3c5160 !important; /* warna utama luxury */
+}
+.review-text {
+  position: relative;
+}
+.review-text::before {
+  content: "“";
+  font-size: 60px;
+  color: #3c5160;
+  opacity: 0.1;
+  position: absolute;
+  top: -55px;
+  left: -10px;
 }

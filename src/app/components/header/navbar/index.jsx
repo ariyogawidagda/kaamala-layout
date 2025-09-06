@@ -99,13 +99,47 @@ export default function Navbar({ setOpen, slug }) {
     };
   }, []);
 
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setHidden(true);
+      } else {
+        setHidden(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <nav
         ref={ref}
-        className="bg-[var(--headerColor)] fixed w-full h-fit inset-0 z-[100] duration-500 ease-in-out"
+        className="bg-[var(--headerColor)] fixed w-full h-fit inset-0 z-[100] duration-500 ease-in-out "
       >
-        <div className="flex container py-[16px] justify-between items-center ">
+        <div
+          className={`flex container py-[16px] justify-between items-center border-b-[1px] border-white/20  ${
+            hidden ? "hidden" : ""
+          }`}
+        >
           <div className="order-2 max-[560px]:order-1">
             <Link href={`/`}>
               <img
@@ -142,6 +176,189 @@ export default function Navbar({ setOpen, slug }) {
               Book Now
             </a>
           </div>
+        </div>
+        <div className="py-4 relative ">
+          <ul className="text-white text-[14px] tracking-[1.2px] flex justify-center gap-[40px]">
+            {/* Our Story */}
+            <li className="group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Our Story
+              </a>
+              {/* Submenu */}
+              <div
+                className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
+                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                }`}
+              >
+                <ul
+                  className={`container gap-[20px] flex justify-center pb-[8px] border-b-[1px] border-white/20 ${
+                    scrolled ? "border-none pb-4" : ""
+                  }`}
+                >
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    About Us
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Awards
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Our 8 Mantras
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Sustainability
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Accomodations */}
+            <li className="group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Accomodations
+              </a>
+              {/* Submenu */}
+              <div
+                className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
+                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                }`}
+              >
+                <ul
+                  className={`container gap-[20px] flex justify-center pb-[8px] border-b-[1px] border-white/20 ${
+                    scrolled ? "border-none pb-4" : ""
+                  }`}
+                >
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Luxury Pool Villas
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Suites
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Dinings */}
+            <li className="group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Dinings
+              </a>
+              {/* Submenu */}
+              <div
+                className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
+                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                }`}
+              >
+                <ul
+                  className={`container gap-[20px] flex justify-center pb-[8px] border-b-[1px] border-white/20 ${
+                    scrolled ? "border-none pb-4" : ""
+                  }`}
+                >
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Habitat Bistro
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Shichirin Ubud
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Seven Paintings Ubud
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Spa & Wellness */}
+            <li className="group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Spa & Wellness
+              </a>
+              {/* Submenu */}
+              <div
+                className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
+                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                }`}
+              >
+                <ul
+                  className={`container gap-[20px] flex justify-center pb-[8px] border-b-[1px] border-white/20 ${
+                    scrolled ? "border-none pb-4" : ""
+                  }`}
+                >
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Svaha Spa Bisma
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Floating Sound Healing
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Yoga
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            {/* Experiences */}
+            <li className="group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Experiences
+              </a>
+              {/* Submenu */}
+              <div
+                className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
+                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                }`}
+              >
+                <ul
+                  className={`container gap-[20px] flex justify-center pb-[8px] border-b-[1px] border-white/20 ${
+                    scrolled ? "border-none pb-4" : ""
+                  }`}
+                >
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Signature Facilities for Elevated Stays
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Immersive Experience
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Romantic Surprises
+                  </li>
+                  <li className="  hover:border-b over:border-white  cursor-pointer">
+                    Events & Weddings
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li className="relative group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Offers
+              </a>
+            </li>
+            <li className="relative group">
+              <a
+                href="#"
+                className="transition-colors duration-300 group-hover:font-bold group-hover:border-b group-hover:border-white pb-1"
+              >
+                Gallery
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
     </>
