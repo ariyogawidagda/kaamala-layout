@@ -1,25 +1,23 @@
-import Awards from "./components/awards";
-import Facilities from "./components/facilities";
-import Footer from "./components/footer";
-import Gallery from "./components/gallery";
-import Header from "./components/header";
-import Hero from "./components/hero";
-import Media from "./components/media";
-import Offers from "./components/offers";
-import GuestReviews from "./components/review";
-import RoomV2 from "./components/roomv2";
-import Room from "./components/rooom";
-import SectionBookM from "./components/sectionbook";
+import Awards from "../components/blue/awards";
+import Facilities from "../components/blue/facilities";
+import Gallery from "../components/blue/gallery";
+import GuestReviews from "../components/blue/guest";
+import Hero from "../components/hero";
+import RoomV2 from "../components/roomv2";
+import Media from "../components/media";
+import Footer from "../components/footer";
+import Header from "../components/header";
+
 import Link from "next/link";
-export default function HomePage() {
+export default function PageBlue() {
   return (
     <>
       <Header />
       <Hero />
       <Awards />
-      <section className="bg-[#FAF8F6] pb-[120px] max-[560px]:pb-[80px]">
+      <section className="bg-[#3c5160] pb-[120px] max-[560px]:pb-[80px]">
         <div className="container text-center">
-          <h2 className="text-[28px] tracking-[0.5px] capitalize leading-[180%] text-[#1A1A1A]">
+          <h2 className="text-[28px] tracking-[0.5px] capitalize leading-[180%] text-white">
             Our Awards
           </h2>
 
@@ -53,10 +51,8 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      {/* <Room /> */}
       <RoomV2 />
       <Facilities />
-      <Offers />
       <section className="h-[100vh] w-full relative max-[560px]:h-[80vh]">
         <div className="relative">
           <img
@@ -94,22 +90,17 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <section className="relative">
-        <Gallery />
-      </section>
-      <section>
-        <GuestReviews />
-      </section>
-      <section className="bg-[#FAF8F6] pb-[100px] max-[560px]:pb-[80px]">
+      <Gallery />
+      <GuestReviews />
+      <section className="bg-[#3c5160] pb-[100px] max-[560px]:pb-[80px]">
         <div className="max-w-[900px] mx-auto">
-          <h2 className="text-[28px] tracking-[0.5px] text-center capitalize leading-[180%] text-[#1A1A1A] mb-[20px]">
+          <h2 className="text-[28px] tracking-[0.5px] text-center capitalize leading-[180%] text-white mb-[20px]">
             Featured On
           </h2>
           <Media />
         </div>
       </section>
       <Footer />
-      <SectionBookM />
     </>
   );
 }

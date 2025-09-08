@@ -64,7 +64,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="col-span-12  hidden my-[40px] border-[#8d7c6b] border-[1.5px] "></div>
-            <div className=" col-span-2 max-[560px]:col-span-6 text-center max-[560px]:mt-[40px]">
+            <div className=" col-span-2 max-[560px]:col-span-6 pl-8 max-[560px]:pl-0 max-[560px]:text-center max-[560px]:mt-[40px]">
               <ul className="text-white flex flex-col gap-[14px]  ">
                 <li>
                   <Link prefetch={false} href={`/`}>

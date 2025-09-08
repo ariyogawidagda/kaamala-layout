@@ -434,13 +434,22 @@ h5 {
 .PhotoView-Slider__Backdrop {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
+
+p {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
 @media (max-width: 560px) {
   h1 {
     font-size: 28px;
     line-height: 180%;
   }
   h2 {
-    font-size: 22px;
+    font-size: 24px;
     line-height: 180%;
   }
   h3 {
@@ -449,7 +458,7 @@ h5 {
   }
   p,
   a {
-    font-size: 14px;
+    font-size: 14px !important;
   }
 }
 .custom-pagination .swiper-pagination-bullet {

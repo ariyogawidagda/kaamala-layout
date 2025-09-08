@@ -12,10 +12,8 @@ export default function Media() {
     "/media/5.png",
     "/media/6.png",
     "/media/7.png",
-    "/media/8.png",
     "/media/9.png",
     "/media/10.png",
-    "/media/11.png",
   ];
   return (
     <>
