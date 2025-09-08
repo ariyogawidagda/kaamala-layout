@@ -1,8 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SidebarDekstop({ setOpen, setContact }) {
+  const [openMenu, setOpenMenu] = useState(null);
+
+  const toggleMenu = (menu) => {
+    setOpenMenu(openMenu === menu ? null : menu);
+  };
   return (
     <>
       <div className=" grid-cols-12 h-full max-[767px]:hidden grid ">
@@ -58,8 +64,26 @@ export default function SidebarDekstop({ setOpen, setContact }) {
               </div>
             </div>
             <div className="flex justify-between ">
-              <ul className="text-[28px] text-white  flex flex-col gap-[40px] w-fit">
+              <ul className="text-[24px] text-white  flex flex-col gap-[30px] w-fit scroll-auto">
                 <li>
+                  <button
+                    className="w-full text-left py-2 "
+                    onClick={() => toggleMenu("ourstory")}
+                  >
+                    Our Story
+                  </button>
+                  <ul
+                    className={`pl-4 overflow-hidden transition-all duration-300 ${
+                      openMenu === "ourstory" ? "max-h-40" : "max-h-0"
+                    }`}
+                  >
+                    <li className="py-2 text-[20px]">About Us</li>
+                    <li className="py-2 text-[20px]">Awards</li>
+                    <li className="py-2 text-[20px]">Our 8 Mantras</li>
+                    <li className="py-2 text-[20px]">Sustainability</li>
+                  </ul>
+                </li>
+                {/* <li>
                   <Link
                     href={`/#accomodation`}
                     className="text-white capitalize"
@@ -68,53 +92,107 @@ export default function SidebarDekstop({ setOpen, setContact }) {
                   >
                     accomodation
                   </Link>
+                </li> */}
+                <li>
+                  <button
+                    className="w-full text-left py-2 "
+                    onClick={() => toggleMenu("accomodation")}
+                  >
+                    Accomodation
+                  </button>
+                  <ul
+                    className={`pl-4 overflow-hidden transition-all duration-300 ${
+                      openMenu === "accomodation" ? "max-h-40" : "max-h-0"
+                    }`}
+                  >
+                    <li className="py-2 text-[20px]">Luxury Pool Villas</li>
+                    <li className="py-2 text-[20px]">Suites</li>
+                  </ul>
+                </li>
+
+                <li>
+                  <button
+                    className="w-full text-left py-2 "
+                    onClick={() => toggleMenu("dinings")}
+                  >
+                    Dinings
+                  </button>
+                  <ul
+                    className={`pl-4 overflow-hidden transition-all duration-300 ${
+                      openMenu === "dinings" ? "max-h-40" : "max-h-0"
+                    }`}
+                  >
+                    <li className="py-2 text-[20px]">Habitat Bistro</li>
+                    <li className="py-2 text-[20px]">Shichirin Ubud</li>
+                    <li className="py-2 text-[20px]">Seven Paintings Ubud</li>
+                  </ul>
                 </li>
                 <li>
-                  <Link
-                    href={`/experience`}
-                    className=" capitalize"
-                    onClick={() => setOpen(false)}
+                  <button
+                    className="w-full text-left py-2 "
+                    onClick={() => toggleMenu("wellness")}
                   >
-                    experience
-                  </Link>
+                    Spa & Wellness
+                  </button>
+                  <ul
+                    className={`pl-4 overflow-hidden transition-all duration-300 ${
+                      openMenu === "wellness" ? "max-h-40" : "max-h-0"
+                    }`}
+                  >
+                    <li className="py-2 text-[20px]">Svaha Spa Bisma</li>
+                    <li className="py-2 text-[20px]">Floating Sound Healing</li>
+                    <li className="py-2 text-[20px]">Yoga</li>
+                  </ul>
+                </li>
+                <li>
+                  <button
+                    className="w-full text-left py-2 "
+                    onClick={() => toggleMenu("experiences")}
+                  >
+                    Experiences
+                  </button>
+                  <ul
+                    className={`pl-4 overflow-hidden transition-all duration-300 ${
+                      openMenu === "experiences" ? "max-h-40" : "max-h-0"
+                    }`}
+                  >
+                    <li className="py-2 text-[20px]">
+                      Signature Facilities for Elevated Stays
+                    </li>
+                    <li className="py-2 text-[20px]">Immersive Experience</li>
+                    <li className="py-2 text-[20px]">Romantic Surprises</li>
+                    <li className="py-2 text-[20px]">Events & Weddings</li>
+                  </ul>
                 </li>
 
                 <li>
                   <Link
-                    href={`/promo`}
+                    href={`/gallery`}
                     className=" capitalize"
+                    aria-label="Link   gallery"
                     onClick={() => setOpen(false)}
                   >
-                    special offers
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href={`/wedding`}
-                    className=" capitalize"
-                    onClick={() => setOpen(false)}
-                  >
-                    wedding
+                    Offers
                   </Link>
                 </li>
                 <li>
                   <Link
                     href={`/gallery`}
                     className=" capitalize"
+                    aria-label="Link   gallery"
                     onClick={() => setOpen(false)}
                   >
-                    gallery
+                    Gallery
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <button
                     onClick={() => setContact(true)}
                     className=" capitalize"
                   >
                     contact
                   </button>
-                </li>
+                </li> */}
               </ul>
               <ul className=" relative">
                 <div className="flex flex-col h-full gap-[20px] justify-center items-center relative z-10">

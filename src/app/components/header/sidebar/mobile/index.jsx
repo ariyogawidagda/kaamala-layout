@@ -1,6 +1,13 @@
-import Link from "next/link";
+"use client";
 
+import Link from "next/link";
+import { useState } from "react";
 export default function SidebarMobile({ setOpen, setContact }) {
+  const [openMenu, setOpenMenu] = useState(null);
+
+  const toggleMenu = (menu) => {
+    setOpenMenu(openMenu === menu ? null : menu);
+  };
   return (
     <div className="container flex-col h-full justify-between col-span-4 max-[767px]:flex hidden">
       <div className="pt-[20px]  flex justify-between items-center">
@@ -28,44 +35,108 @@ export default function SidebarMobile({ setOpen, setContact }) {
       </div>
       <div className="flex justify-between ">
         <ul className="text-[28px] text-white  flex flex-col gap-[20px] w-fit">
+          {/* Our Story */}
           <li>
-            <Link
-              href={`/#accomodation`}
-              className=" capitalize"
-              aria-label="Link Accomodation"
-              onClick={() => setOpen(false)}
+            <button
+              className="w-full text-left py-2 text-[14px]"
+              onClick={() => toggleMenu("ourstory")}
             >
-              accomodation
-            </Link>
+              Our Story
+            </button>
+            <ul
+              className={`pl-4 overflow-hidden transition-all duration-300 ${
+                openMenu === "ourstory" ? "max-h-40" : "max-h-0"
+              }`}
+            >
+              <li className="py-1 text-sm">About Us</li>
+              <li className="py-1 text-sm">Awards</li>
+              <li className="py-1 text-sm">Our 8 Mantras</li>
+              <li className="py-1 text-sm">Sustainability</li>
+            </ul>
           </li>
+
           <li>
-            <Link
-              href={`/experience`}
-              className=" capitalize"
-              aria-label="Link experience"
-              onClick={() => setOpen(false)}
+            <button
+              className="w-full text-left py-2 text-[14px]"
+              onClick={() => toggleMenu("accomodation")}
             >
-              experience
-            </Link>
+              Accomodation
+            </button>
+            <ul
+              className={`pl-4 overflow-hidden transition-all duration-300 ${
+                openMenu === "accomodation" ? "max-h-40" : "max-h-0"
+              }`}
+            >
+              <li className="py-1 text-sm">Luxury Pool Villas</li>
+              <li className="py-1 text-sm">Suites</li>
+            </ul>
+          </li>
+
+          <li>
+            <button
+              className="w-full text-left py-2 text-[14px]"
+              onClick={() => toggleMenu("dinings")}
+            >
+              Dinings
+            </button>
+            <ul
+              className={`pl-4 overflow-hidden transition-all duration-300 ${
+                openMenu === "dinings" ? "max-h-40" : "max-h-0"
+              }`}
+            >
+              <li className="py-1 text-sm">Habitat Bistro</li>
+              <li className="py-1 text-sm">Shichirin Ubud</li>
+              <li className="py-1 text-sm">Seven Paintings Ubud</li>
+            </ul>
+          </li>
+
+          <li>
+            <button
+              className="w-full text-left py-2 text-[14px]"
+              onClick={() => toggleMenu("wellness")}
+            >
+              Spa & Wellness
+            </button>
+            <ul
+              className={`pl-4 overflow-hidden transition-all duration-300 ${
+                openMenu === "wellness" ? "max-h-40" : "max-h-0"
+              }`}
+            >
+              <li className="py-1 text-sm">Svaha Spa Bisma</li>
+              <li className="py-1 text-sm">Floating Sound Healing</li>
+              <li className="py-1 text-sm">Yoga</li>
+            </ul>
+          </li>
+
+          <li>
+            <button
+              className="w-full text-left py-2 text-[14px]"
+              onClick={() => toggleMenu("experiences")}
+            >
+              Experiences
+            </button>
+            <ul
+              className={`pl-4 overflow-hidden transition-all duration-300 ${
+                openMenu === "experiences" ? "max-h-40" : "max-h-0"
+              }`}
+            >
+              <li className="py-1 text-sm">
+                Signature Facilities for Elevated Stays
+              </li>
+              <li className="py-1 text-sm">Immersive Experience</li>
+              <li className="py-1 text-sm">Romantic Surprises</li>
+              <li className="py-1 text-sm">Events & Weddings</li>
+            </ul>
           </li>
 
           <li>
             <Link
-              href={`/promo`}
+              href={`/gallery`}
               className=" capitalize"
+              aria-label="Link   gallery"
               onClick={() => setOpen(false)}
             >
-              special offers
-            </Link>
-          </li>
-
-          <li>
-            <Link
-              href={`/wedding`}
-              className=" capitalize"
-              onClick={() => setOpen(false)}
-            >
-              wedding
+              Offers
             </Link>
           </li>
           <li>
@@ -75,17 +146,17 @@ export default function SidebarMobile({ setOpen, setContact }) {
               aria-label="Link   gallery"
               onClick={() => setOpen(false)}
             >
-              gallery
+              Gallery
             </Link>
           </li>
-          <li>
+          {/* <li>
             <button
               onClick={() => setContact(true)}
               className=" capitalize max-[560px]:text-[14px]"
             >
               contact
             </button>
-          </li>
+          </li> */}
         </ul>
         <ul className="flex flex-col gap-[20px] justify-center items-center">
           <li className="w-[30px] h-[30px] rounded-[50%] flex justify-center items-center bg-[var(--bodyColor)]">

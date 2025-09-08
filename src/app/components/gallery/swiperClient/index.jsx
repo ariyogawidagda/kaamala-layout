@@ -21,7 +21,7 @@ export default function SwiperClient() {
           <div className="relative cursor-pointer">
             {/* Gambar */}
             <Image
-              src={`/gtwobdr.webp`}
+              src={`/signature.webp`}
               alt="Luxury Resort"
               className="w-full h-[327px] min-[767px]:h-[358px] object-cover object-center"
               width={1080}
@@ -46,7 +46,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover</p>
+                <p className="text-[14px] text-white">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -61,7 +61,7 @@ export default function SwiperClient() {
           <div className="relative cursor-pointer">
             {/* Gambar */}
             <Image
-              src={`/gtwobdr.webp`}
+              src={`/immersive.webp`}
               alt="Luxury Resort"
               className="w-full h-[327px] min-[767px]:h-[358px] object-cover object-center"
               width={1080}
@@ -86,7 +86,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover</p>
+                <p className="text-[14px] text-white">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -101,7 +101,7 @@ export default function SwiperClient() {
           <div className="relative cursor-pointer">
             {/* Gambar */}
             <Image
-              src={`/gtwobdr.webp`}
+              src={`/romantic.webp`}
               alt="Luxury Resort"
               className="w-full h-[327px] min-[767px]:h-[358px] object-cover object-center"
               width={1080}
@@ -126,7 +126,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover</p>
+                <p className="text-[14px] text-white">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -141,7 +141,7 @@ export default function SwiperClient() {
           <div className="relative cursor-pointer">
             {/* Gambar */}
             <Image
-              src={`/gtwobdr.webp`}
+              src={`/wedding.webp`}
               alt="Luxury Resort"
               className="w-full h-[327px] min-[767px]:h-[358px] object-cover object-center"
               width={1080}
@@ -166,7 +166,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover</p>
+                <p className="text-[14px] text-white">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"

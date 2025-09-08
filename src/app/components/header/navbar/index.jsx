@@ -136,7 +136,7 @@ export default function Navbar({ setOpen, slug }) {
         className="bg-[var(--headerColor)] fixed w-full h-fit inset-0 z-[100] duration-500 ease-in-out "
       >
         <div
-          className={`flex container py-[16px] justify-between items-center border-b-[1px] border-white/20  ${
+          className={`flex container py-[16px] justify-between items-center min-[768px]:border-b-[1px] min-[768px]:border-white/20  ${
             hidden ? "hidden" : ""
           }`}
         >
@@ -177,8 +177,8 @@ export default function Navbar({ setOpen, slug }) {
             </a>
           </div>
         </div>
-        <div className="py-4 relative ">
-          <ul className="text-white text-[14px] tracking-[1.2px] flex justify-center gap-[40px]">
+        <div className="py-4 relative max-[768px]:hidden">
+          <ul className="text-white text-[14px] tracking-[1.2px] flex justify-center gap-[40px] max-[1024px]:gap-[30px]">
             {/* Our Story */}
             <li className="group">
               <a

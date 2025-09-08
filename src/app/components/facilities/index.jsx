@@ -1,7 +1,7 @@
 export default function Facilities() {
   return (
     <>
-      <section className="bg-[#FAF8F6] pt-[100px] pb-[100px] max-[560px]:py-[70px] max-[560px]:pb-[60px]">
+      <section className="bg-[#FAF8F6] pt-[100px] pb-[100px] max-[560px]:py-[70px] max-[560px]:pb-[30px]">
         <div className="container">
           <h2 className="text-[28px] text-center tracking-[0.5px] mb-[40px] capitalize leading-[180%] text-[#1A1A1A]">
             Dinings
@@ -43,7 +43,7 @@ export default function Facilities() {
                       href={"#"}
                       className="px-[22px] py-[12px] bg-[var(--primaryColor)] text-[14px] text-white inline-block"
                     >
-                      Learn More
+                      Discover More
                     </a>
                   </div>
                 </div>
@@ -86,7 +86,7 @@ export default function Facilities() {
                       href={"#"}
                       className="px-[22px] py-[12px] bg-[var(--primaryColor)] text-[14px] text-white inline-block"
                     >
-                      Learn More
+                      Discover More
                     </a>
                   </div>
                 </div>
@@ -128,7 +128,7 @@ export default function Facilities() {
                       href={"#"}
                       className="px-[22px] py-[12px] bg-[var(--primaryColor)] text-[14px] text-white inline-block"
                     >
-                      Learn More
+                      Discover More
                     </a>
                   </div>
                 </div>

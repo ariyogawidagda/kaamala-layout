@@ -15,7 +15,7 @@ export default function Offers() {
       link: "#",
     },
     {
-      img: "/sound.webp",
+      img: "/sound-healing.webp",
       title: "Floating Sound Healing",
       link: "#",
     },
@@ -43,7 +43,7 @@ export default function Offers() {
             slidesPerView={3}
             navigation
             breakpoints={{
-              0: { slidesPerView: 1.2, spaceBetween: 20 },
+              0: { slidesPerView: 1.2, spaceBetween: 30 },
               768: { slidesPerView: 2.2, spaceBetween: 30 },
               1024: { slidesPerView: 3, spaceBetween: 40 },
             }}
@@ -74,7 +74,7 @@ export default function Offers() {
                       href={offer.link}
                       className="flex gap-[10px] items-center"
                     >
-                      <p className="text-[14px] text-white">Learn More</p>
+                      <p className="text-[14px] text-white">Discover More</p>
                       <img
                         src={`arrow.png`}
                         loading="lazy"

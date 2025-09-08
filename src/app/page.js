@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Gallery from "./components/gallery";
 import Header from "./components/header";
 import Hero from "./components/hero";
+import Media from "./components/media";
 import Offers from "./components/offers";
 import GuestReviews from "./components/review";
 import RoomV2 from "./components/roomv2";
@@ -52,11 +53,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-      <Room />
-      {/* <RoomV2 /> */}
+      {/* <Room /> */}
+      <RoomV2 />
       <Facilities />
       <Offers />
-      <section className="h-[100vh] w-full relative">
+      <section className="h-[100vh] w-full relative max-[560px]:h-[80vh]">
         <div className="relative">
           <img
             src="/bg-room.webp"
@@ -81,7 +82,7 @@ export default function HomePage() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Learn More</p>
+                <p className="text-[14px] text-white">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -98,6 +99,14 @@ export default function HomePage() {
       </section>
       <section>
         <GuestReviews />
+      </section>
+      <section className="bg-[#FAF8F6] pb-[100px] max-[560px]:pb-[80px]">
+        <div className="max-w-[900px] mx-auto">
+          <h2 className="text-[28px] tracking-[0.5px] text-center capitalize leading-[180%] text-[#1A1A1A] mb-[20px]">
+            Featured On
+          </h2>
+          <Media />
+        </div>
       </section>
       <Footer />
       <SectionBookM />

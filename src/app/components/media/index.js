@@ -4,6 +4,19 @@ import "swiper/css";
 import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css/navigation";
 export default function Media() {
+  const data = [
+    "/media/1.png",
+    "/media/2.png",
+    "/media/3.png",
+    "/media/4.png",
+    "/media/5.png",
+    "/media/6.png",
+    "/media/7.png",
+    "/media/8.png",
+    "/media/9.png",
+    "/media/10.png",
+    "/media/11.png",
+  ];
   return (
     <>
       <Swiper
@@ -33,8 +46,8 @@ export default function Media() {
             <SwiperSlide key={index} className="!h-auto">
               <div className="overflow-hidden flex h-full items-center">
                 <img
-                  src={item.logo}
-                  className="w-full h-auto duration-500 ease-in-out object-cover  hover:scale-105"
+                  src={item}
+                  className="w-full max-[560px]:h-[180px] h-auto duration-500 ease-in-out object-cover  hover:scale-105"
                   alt="logo"
                 />
               </div>
