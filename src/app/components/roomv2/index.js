@@ -54,7 +54,7 @@ export default function RoomTypeSlider() {
       <div className="absolute inset-0 bg-black/75" />
 
       <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white z-10 px-4">
-        <div className="max-w-[700px] mx-auto space-y-8">
+        <div className="max-w-[700px] mx-auto space-y-8 mt-[100px]">
           <p className="text-white/90 text-[14px] tracking-[0.5px]">
             {roomTypes[activeIndex].text}
           </p>
