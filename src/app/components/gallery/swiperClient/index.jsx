@@ -38,7 +38,7 @@ export default function SwiperClient() {
             ></div>
 
             {/* Text + Button */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10 px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white/80 z-10 px-4">
               <h3 className="text-[22px] tracking-[0.5px] mb-3">
                 Signature Facilities for Elevated Stays
               </h3>
@@ -46,7 +46,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover More</p>
+                <p className="text-[14px] text-white/80">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -78,7 +78,7 @@ export default function SwiperClient() {
             ></div>
 
             {/* Text + Button */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10 px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white/80 z-10 px-4">
               <h3 className="text-[22px] tracking-[0.5px] mb-3">
                 Immersive Experience
               </h3>
@@ -86,7 +86,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover More</p>
+                <p className="text-[14px] text-white/80">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -118,7 +118,7 @@ export default function SwiperClient() {
             ></div>
 
             {/* Text + Button */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10 px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white/80 z-10 px-4">
               <h3 className="text-[22px] tracking-[0.5px] mb-3">
                 Romantic Surprises
               </h3>
@@ -126,7 +126,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover More</p>
+                <p className="text-[14px] text-white/80">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"
@@ -158,7 +158,7 @@ export default function SwiperClient() {
             ></div>
 
             {/* Text + Button */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white z-10 px-4">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center text-white/80 z-10 px-4">
               <h3 className="text-[22px] tracking-[0.5px] mb-3">
                 Events & Weddings
               </h3>
@@ -166,7 +166,7 @@ export default function SwiperClient() {
                 href={`#`}
                 className="flex gap-[10px] justify-center items-center pt-2"
               >
-                <p className="text-[14px] text-white">Discover More</p>
+                <p className="text-[14px] text-white/80">Discover More</p>
                 <img
                   src={`arrow.png`}
                   loading="lazy"

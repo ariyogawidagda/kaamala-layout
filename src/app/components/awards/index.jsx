@@ -16,16 +16,16 @@ export default function Awards() {
     <>
       <section
         id="section2"
-        className="bg-[#FAF8F6] relative pb-[100px] max-[560px]:pb-[70px] "
+        className="bg-[#3c5160] relative pb-[100px] max-[560px]:pb-[70px] "
       >
-        <div ref={ref} className="max-[900px]:hidden pt-[110px]">
+        <div ref={ref} className="max-[900px]:hidden pt-[70px]">
           {inView ? <KalendarNew /> : <div style={{ height: 250 }} />}
         </div>
-        <div className="h-[150px] max-[560px]:h-[50px]" />
+        <div className="h-[120px] max-[560px]:h-[50px]" />
 
         <div className="container ">
           <div className="">
-            <h1 className="text-[36px] tracking-[0.5px] text-center leading-[180%] text-[#1A1A1A]">
+            <h1 className="text-[36px] tracking-[0.5px] text-center leading-[180%] text-white/80">
               Kaamala Luxury Resort and Spa in Ubud
             </h1>
           </div>
@@ -34,22 +34,23 @@ export default function Awards() {
             <div className="w-[6px] h-[6px] bg-[#D4AF37] rounded-full"></div>
             <div className="w-[40px] h-[1px] bg-[#D4AF37]"></div>
           </div> */}
-          <div className="h-[70px] max-[560px]:h-[50px]"></div>
+          <div className="h-[50px] max-[560px]:h-[50px]"></div>
           {/* Deskripsi Resort */}
-          <div className="grid grid-cols-2 min-[768px]:mt-[30px] gap-[80px] max-[560px]:gap-[40px]  max-[560px]:grid-cols-1">
-            <div className="space-y-4 text-center">
+          <div className="grid grid-cols-2 min-[768px]:mt-[30px] gap-[80px] max-[560px]:gap-[40px]  max-[1024px]:grid-cols-1">
+            <div className="relative">
               <img
                 src="/gtwo.webp"
                 alt="Luxury Resort Ubud"
-                className="w-full h-auto object-cover "
+                className="w-full h-full object-cover shadow-md "
               />
+              <div className="absolute inset-0 bg-black/40" />
             </div>
             <div className="space-y-5 flex flex-col justify-center items-center">
-              <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
+              <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[120%] text-white/80">
                 A Lotus-Inspired Sanctuary of Purity and Harmony in Ubud
               </h2>
               <p
-                className={`leading-[180%] tracking-[0.5px] text-[#1A1A1A]/70 text-center transition-all duration-300 ${
+                className={`leading-[180%] tracking-[0.5px] text-white/60 text-center transition-all duration-300 ${
                   isExpanded ? "line-clamp-none" : "line-clamp-4"
                 }`}
               >
@@ -68,7 +69,7 @@ export default function Awards() {
 
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
-                className="cursor-pointer text-[#1A1A1A]/70  mt-2 tracking-[1.2px] text-[14px]  border-b-[1px] pb-1 border-[#1A1A1A]/40"
+                className="cursor-pointer text-white/60  mt-2 tracking-[1.2px] text-[14px]  border-b-[1px] pb-1 border-white/40"
               >
                 {isExpanded ? "Show Less" : "More"}
               </button>

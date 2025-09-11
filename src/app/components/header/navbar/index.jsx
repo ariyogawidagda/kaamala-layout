@@ -18,12 +18,15 @@ export default function Navbar({ setOpen, slug }) {
         if (isMobile) {
           if (currentScrollPosition > previousScrollPosition) {
             // ref.current.classList.add("hideY");
-            ref.current.classList.add("bg-[var(--headerColor)]");
+            ref.current.classList.add("bg-[var(--headerColor)]", "shadow-md");
           } else {
             if (currentScrollPosition === 0) {
-              ref.current.classList.remove("bg-[var(--headerColor)]");
+              ref.current.classList.remove(
+                "bg-[var(--headerColor)]",
+                "shadow-md"
+              );
             } else {
-              ref.current.classList.add("bg-[var(--headerColor)]");
+              ref.current.classList.add("bg-[var(--headerColor)]", "shadow-md");
             }
             ref.current.classList.remove("hideY");
           }
@@ -31,7 +34,7 @@ export default function Navbar({ setOpen, slug }) {
           previousScrollPosition = currentScrollPosition;
         } else {
           if (scrollTop > 50) {
-            ref.current.classList.add("bg-[var(--headerColor)]");
+            ref.current.classList.add("bg-[var(--headerColor)]", "shadow-md");
             refButton?.current?.classList.add(
               "hover:bg-[var(--btnHoverColor)]"
             );
@@ -45,7 +48,10 @@ export default function Navbar({ setOpen, slug }) {
               "hover:border-[var(--headerColor)]"
             );
           } else {
-            ref.current.classList.remove("bg-[var(--headerColor)]");
+            ref.current.classList.remove(
+              "bg-[var(--headerColor)]",
+              "shadow-md"
+            );
             refButton?.current?.classList.remove(
               "hover:bg-[var(--btnHoverColor)]"
             );
@@ -190,12 +196,12 @@ export default function Navbar({ setOpen, slug }) {
               {/* Submenu */}
               <div
                 className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
-                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                  scrolled ? "bg-[#3c5160] shadow-md" : "bg-transparent"
                 }`}
               >
                 <ul
                   className={`container gap-[20px] flex justify-center pb-[8px] border-b-[1px] border-white/20 ${
-                    scrolled ? "border-none pb-4" : ""
+                    scrolled ? "border-none pb-4 " : ""
                   }`}
                 >
                   <li className="  hover:border-b over:border-white  cursor-pointer">
@@ -225,7 +231,7 @@ export default function Navbar({ setOpen, slug }) {
               {/* Submenu */}
               <div
                 className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
-                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                  scrolled ? "bg-[#3c5160] shadow-md" : "bg-transparent"
                 }`}
               >
                 <ul
@@ -254,7 +260,7 @@ export default function Navbar({ setOpen, slug }) {
               {/* Submenu */}
               <div
                 className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
-                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                  scrolled ? "bg-[#3c5160] shadow-md" : "bg-transparent"
                 }`}
               >
                 <ul
@@ -286,7 +292,7 @@ export default function Navbar({ setOpen, slug }) {
               {/* Submenu */}
               <div
                 className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
-                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                  scrolled ? "bg-[#3c5160] shadow-md" : "bg-transparent"
                 }`}
               >
                 <ul
@@ -318,7 +324,7 @@ export default function Navbar({ setOpen, slug }) {
               {/* Submenu */}
               <div
                 className={`absolute left-0 mt-2 w-full text-white flex flex-row justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300  py-2 ${
-                  scrolled ? "bg-[#3c5160] " : "bg-transparent"
+                  scrolled ? "bg-[#3c5160] shadow-md" : "bg-transparent"
                 }`}
               >
                 <ul

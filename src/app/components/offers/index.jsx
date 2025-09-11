@@ -27,10 +27,10 @@ export default function Offers() {
   ];
 
   return (
-    <section className="bg-[#FAF8F6] pb-[120px] max-[560px]:pb-[80px]">
+    <section className="bg-[#3c5160] pb-[120px] max-[560px]:pb-[80px]">
       <div className="container">
         <div className="max-w-[600px] mx-auto space-y-6">
-          <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[180%] text-[#1A1A1A]">
+          <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[180%] text-white/80">
             Spa & Wellness
           </h2>
         </div>
@@ -65,7 +65,7 @@ export default function Offers() {
                     }}
                   ></div>
                   <div className="absolute w-[80%] text-center top-[50%] left-[50%] translate-x-[-50%] z-20">
-                    <h3 className="text-[22px] text-white tracking-[0.5px] leading-[120%]">
+                    <h3 className="text-[22px] text-white/80 tracking-[0.5px] leading-[120%]">
                       {offer.title}
                     </h3>
                   </div>
@@ -74,7 +74,7 @@ export default function Offers() {
                       href={offer.link}
                       className="flex gap-[10px] items-center"
                     >
-                      <p className="text-[14px] text-white">Discover More</p>
+                      <p className="text-[14px] text-white/80">Discover More</p>
                       <img
                         src={`arrow.png`}
                         loading="lazy"

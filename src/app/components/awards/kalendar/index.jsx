@@ -139,10 +139,10 @@ export default function KalendarNew() {
         onClick={onClick}
         id="checkin-datepicker"
         placeholder="Mon, Nov 04 2024 - Tue, Nov 05 2024"
-        className="pl-[30px] w-full bg-white text-[18px] max-[1220px]:text-[16px]  text-[#5e5e5e] focus:outline-none cursor-pointer "
+        className="pl-[30px] w-full text-[18px] max-[1220px]:text-[16px]  text-white/60 focus:outline-none cursor-pointer "
       />
       <div className="absolute top-[50%] translate-y-[-50%] z-0 left-0 ">
-        <IoCalendarOutline className="size-6" />
+        <IoCalendarOutline className="size-6 text-white/60" />
       </div>
     </div>
   ));
@@ -219,11 +219,11 @@ export default function KalendarNew() {
   return (
     <>
       <div className="relative w-full top-[50px]">
-        <div className="container bg-white  py-[50px] px-[25px] shadow-md max-[900px]:hidden">
+        <div className="container bg-transparent   py-[50px] px-[25px] shadow-md max-[900px]:hidden">
           <div className="flex gap-[80px] max-[1350px]:gap-[40px] flex-auto max-[1140px]:gap-[40px] max-[1120px]:gap-[20px]">
             <div className="w-[400px] max-[1220px]:w-[320px]">
               <label
-                className="mb-[5px] !text-[16px] max-[1220px]:!text-[14px] block  font-medium text-[#5e5e5e]"
+                className="mb-[5px] !text-[16px] max-[1220px]:!text-[14px] block  font-medium text-white/80"
                 htmlFor="checkin-datepicker"
                 style={{ fontFamily: "var(--font-arsenal" }}
               >
@@ -284,7 +284,7 @@ export default function KalendarNew() {
             <div className="w-[140px] ">
               <div className=" ">
                 <label
-                  className="mb-[5px] block !text-[16px] max-[1220px]:!text-[14px] font-medium text-[#5e5e5e] "
+                  className="mb-[5px] block !text-[16px] max-[1220px]:!text-[14px] font-medium text-white/80 "
                   style={{ fontFamily: "var(--font-arsenal" }}
                   htmlFor="guest"
                 >
@@ -298,12 +298,12 @@ export default function KalendarNew() {
                     id="guest"
                     readOnly
                     type="text"
-                    className="w-full pl-[30px] text-[18px] max-[1220px]:!text-[16px] !text-[#5e5e5e] cursor-pointer outline-none"
+                    className="w-full pl-[30px] text-[18px] max-[1220px]:!text-[16px] !text-white/60 cursor-pointer outline-none"
                     value={adults}
                     onChange={(e) => setAdults(e.target.value)}
                   />
                   <div className="absolute top-[50%] translate-y-[-50%] left-0 ">
-                    <PiUsers className="size-6" />
+                    <PiUsers className="size-6 text-white/60" />
                   </div>
                 </div>
               </div>
@@ -311,7 +311,7 @@ export default function KalendarNew() {
             <div className="w-[220px]">
               <div className="relative">
                 <label
-                  className="mb-[5px] block !text-[16px] max-[1220px]:!text-[14px] font-medium text-[#5e5e5e] "
+                  className="mb-[5px] block !text-[16px] max-[1220px]:!text-[14px] font-medium text-white/80 "
                   style={{ fontFamily: "var(--font-arsenal" }}
                 >
                   Promo Code
@@ -320,12 +320,12 @@ export default function KalendarNew() {
                   <input
                     type="text"
                     placeholder="Enter Promo Code"
-                    className="w-full pl-[30px] text-[18px] max-[1220px]:!text-[16px] text-[#5e5e5e] outline-none"
+                    className="w-full pl-[30px] text-[18px] max-[1220px]:!text-[16px] text-white/60 outline-none"
                     value={promo}
                     onChange={(e) => setPromo(e.target.value)}
                   />
                   <div className="absolute top-[50%] translate-y-[-50%] left-0 ">
-                    <MdOutlineDiscount className="size-6" />
+                    <MdOutlineDiscount className="size-6 text-white/60" />
                   </div>
                 </div>
               </div>
@@ -383,7 +383,7 @@ export default function KalendarNew() {
 
                 <button
                   className="py-[12px]  px-[24px] inline-block w-full
-                     text-white bg-[#3C5160] transition-transform duration-500 ease-in-out hover:scale-105"
+                     text-white/80 bg-[#2D3D49]/80 transition-transform duration-500 ease-in-out hover:scale-105"
                   aria-label="Link Booking"
                 >
                   Check Availability

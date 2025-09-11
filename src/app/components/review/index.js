@@ -35,9 +35,9 @@ const reviews = [
 
 export default function GuestReviews() {
   return (
-    <section className="bg-[#FAF8F6] pb-[100px] max-[560px]:pb-[70px]">
+    <section className="bg-[#3c5160] pb-[100px] max-[560px]:pb-[70px]">
       <div className="container mx-auto text-center">
-        <h2 className="text-[28px] tracking-[0.5px] text-[#1A1A1A] mb-14 max-[560px]:mb-[40px]">
+        <h2 className="text-[28px] tracking-[0.5px] text-white/80 mb-14 max-[560px]:mb-[40px]">
           Guest Reviews
         </h2>
 
@@ -51,18 +51,19 @@ export default function GuestReviews() {
             768: { slidesPerView: 2 },
             1024: { slidesPerView: 3 },
           }}
+          className="!h-auto "
         >
           {reviews.map((review, idx) => (
-            <SwiperSlide key={idx} className="h-auto">
-              <div className="bg-white px-10 py-12 flex flex-col justify-between text-left">
-                <p className="relative review-text text-[16px]  text-[#1A1A1A]/85 italic font-light leading-[1.8] tracking-wide mb-10">
+            <SwiperSlide key={idx} className="!h-auto pb-2">
+              <div className="bg-transparent shadow-md px-10 py-12 flex flex-col justify-between text-left">
+                <p className="relative review-text text-[16px]  text-white/80 italic font-light leading-[1.8] tracking-wide mb-10">
                   “{review.text}”
                 </p>
-                <div className="mt-auto border-t border-[#E6E2DF] pt-6">
-                  <p className="text-[16px] font-medium text-[#1A1A1A]">
+                <div className="mt-auto border-t-[1px] border-[#E6E2DF]/50 pt-6">
+                  <p className="text-[16px] font-medium text-white/80">
                     — {review.author}
                   </p>
-                  <p className="text-[13px] text-[#3c5160]/70 uppercase tracking-[1.5px] mt-1">
+                  <p className="!text-[13px] text-white/40 uppercase tracking-[1.5px] mt-1">
                     {review.source}
                   </p>
                 </div>

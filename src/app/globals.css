@@ -446,11 +446,11 @@ h2 {
 @media (max-width: 560px) {
   h1 {
     font-size: 28px;
-    line-height: 180%;
+    line-height: 120%;
   }
   h2 {
     font-size: 24px;
-    line-height: 180%;
+    line-height: 120%;
   }
   h3 {
     font-size: 18px;
@@ -462,11 +462,11 @@ h2 {
   }
 }
 .custom-pagination .swiper-pagination-bullet {
-  background: #d1d5db; /* abu default */
+  background: #d1d5db;
   opacity: 1;
 }
 .custom-pagination .swiper-pagination-bullet-active {
-  background: #3c5160 !important; /* warna utama luxury */
+  background: #2d3d49 !important;
 }
 .review-text {
   position: relative;
@@ -474,7 +474,7 @@ h2 {
 .review-text::before {
   content: "“";
   font-size: 60px;
-  color: #3c5160;
+  color: #fff;
   opacity: 0.1;
   position: absolute;
   top: -55px;

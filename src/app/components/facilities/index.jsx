@@ -1,9 +1,9 @@
 export default function Facilities() {
   return (
     <>
-      <section className="bg-[#FAF8F6] pt-[100px] pb-[100px] max-[560px]:py-[70px] max-[560px]:pb-[30px]">
+      <section className="bg-[#3c5160] pt-[100px] pb-[100px] max-[560px]:py-[70px] max-[560px]:pb-[30px]">
         <div className="container">
-          <h2 className="text-[28px] text-center tracking-[0.5px] mb-[40px] capitalize leading-[180%] text-[#1A1A1A]">
+          <h2 className="text-[28px] text-center tracking-[0.5px] mb-[40px] capitalize leading-[180%] text-white/80">
             Dinings
           </h2>
           <div className="space-y-[80px] max-lg:space-y-[60px] max-[560px]:space-y-[40px]">
@@ -11,13 +11,14 @@ export default function Facilities() {
             <div className="grid grid-cols-12 gap-[40px] max-lg:gap-[20px]">
               {/* Image */}
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="img-container relative overflow-hidden">
+                <div className="img-container relative overflow-hidden shadow-md">
                   <img
                     src={"/habitat.webp"}
                     alt="Habitat Bistro"
                     loading="lazy"
-                    className="w-full h-[550px] max-[560px]:h-[350px] object-cover object-center"
+                    className="w-full h-[550px] max-[560px]:h-[350px] object-cover object-center "
                   />
+                  <div className="absolute bg-black/40 inset-0" />
                 </div>
               </div>
               {/* Text */}
@@ -29,10 +30,10 @@ export default function Facilities() {
                   >
                     OUR RESTAURANT
                   </span> */}
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Habitat Bistro
                   </h3>
-                  <p className="text-[#1A1A1A]/70 text-[14px] leading-[180%] tracking-[0.5px]">
+                  <p className="text-white/60 text-[14px] leading-[180%] tracking-[0.5px]">
                     Set within this luxury resort in Ubud Bali, Habitat Bistro
                     offers a soulful dining experience with serene forest views,
                     featuring nourishing local cuisine and refined Italian
@@ -41,7 +42,7 @@ export default function Facilities() {
                   <div className="mt-[16px]">
                     <a
                       href={"#"}
-                      className="px-[22px] py-[12px] bg-[var(--primaryColor)] text-[14px] text-white inline-block"
+                      className="px-[22px] py-[12px] bg-[#2D3D49]/80 text-[14px] text-white/80 inline-block"
                     >
                       Discover More
                     </a>
@@ -54,13 +55,14 @@ export default function Facilities() {
             <div className="grid grid-cols-12 gap-[40px] max-lg:gap-[20px]">
               {/* Image */}
               <div className="col-span-5 max-lg:col-span-12 order-2 max-lg:order-1">
-                <div className="img-container relative overflow-hidden">
+                <div className="img-container relative overflow-hidden shadow-md">
                   <img
                     src={"/shichirin.webp"}
                     alt="Shichirin Ubud"
                     loading="lazy"
                     className="w-full h-[550px] max-[560px]:h-[350px] object-cover object-center"
                   />
+                  <div className="absolute bg-black/40 inset-0" />
                 </div>
               </div>
               {/* Text */}
@@ -72,10 +74,10 @@ export default function Facilities() {
                   >
                     OUR RESTAURANT
                   </span> */}
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Shichirin Ubud
                   </h3>
-                  <p className="text-[#1A1A1A]/70 text-[14px] leading-[180%] tracking-[0.5px]">
+                  <p className="text-white/60 text-[14px] leading-[180%] tracking-[0.5px]">
                     Shichirin Ubud brings the essence of Japanese culinary
                     artistry to life through elegant teppanyaki, expertly
                     prepared sushi, and signature gyukatsu, all within a serene
@@ -84,7 +86,7 @@ export default function Facilities() {
                   <div className="mt-[16px]">
                     <a
                       href={"#"}
-                      className="px-[22px] py-[12px] bg-[var(--primaryColor)] text-[14px] text-white inline-block"
+                      className="px-[22px] py-[12px] bg-[#2D3D49]/80 text-[14px] text-white/80 inline-block"
                     >
                       Discover More
                     </a>
@@ -97,13 +99,14 @@ export default function Facilities() {
             <div className="grid grid-cols-12 gap-[40px] max-lg:gap-[20px]">
               {/* Image */}
               <div className="col-span-5 max-lg:col-span-12">
-                <div className="img-container relative overflow-hidden">
+                <div className="img-container relative overflow-hidden shadow-md">
                   <img
                     src={"/facilities1.webp"}
                     alt="Seven Paintings Ubud"
                     loading="lazy"
                     className="w-full h-[550px] max-[560px]:h-[350px] object-cover object-center"
                   />
+                  <div className="absolute bg-black/40 inset-0" />
                 </div>
               </div>
               {/* Text */}
@@ -115,10 +118,10 @@ export default function Facilities() {
                   >
                     OUR RESTAURANT
                   </span> */}
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-[#1A1A1A]">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Seven Paintings Ubud
                   </h3>
-                  <p className="text-[#1A1A1A]/70 text-[14px] leading-[180%] tracking-[0.5px]">
+                  <p className="text-white/60 text-[14px] leading-[180%] tracking-[0.5px]">
                     Seven emotional journeys unfold in a symphony of flavor and
                     feeling at Seven Paintings Ubud, where each course becomes a
                     canvas and every moment, a performance of art and soul.
@@ -126,7 +129,7 @@ export default function Facilities() {
                   <div className="mt-[16px]">
                     <a
                       href={"#"}
-                      className="px-[22px] py-[12px] bg-[var(--primaryColor)] text-[14px] text-white inline-block"
+                      className="px-[22px] py-[12px] bg-[#2D3D49]/80 text-[14px] text-white/80 inline-block"
                     >
                       Discover More
                     </a>
