@@ -18,7 +18,7 @@ export default function KaamalaAccomodation() {
     {
       name: "Grand 2 Bedroom Private Pool Villa with Ricefield View",
       image: "/rooms/grand-two-bedroom.webp",
-      desc: "Spacious villa perfect for families, blending comfort, privacy, and luxury amenities.",
+      desc: "Embraced by the gentle sway of emerald rice paddies, this tropical haven invites families or groups into a soulful escape where open-air living and Balinese elegance turn every moment into a shared memory",
       link: "/rooms/family-villa",
     },
     {
@@ -39,6 +39,12 @@ export default function KaamalaAccomodation() {
       name: "Grand Suite with Forest View",
       image: "/rooms/grand-suite-forest.webp",
       desc: "An elevated jungle retreat where spacious interiors open to sweeping forest panoramas, and a forest view jacuzzi invites you to soak in the stillness, crafted for immersive relaxation, and an intimate connection.",
+      link: "/rooms/suite-room",
+    },
+    {
+      name: "The Bloom Continues: A Refined Retreat ",
+      image: "/rooms/grand-suite-forest.webp",
+      desc: "Coming Soon",
       link: "/rooms/suite-room",
     },
   ];

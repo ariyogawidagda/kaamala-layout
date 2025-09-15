@@ -49,7 +49,7 @@ export default function Awards() {
               <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[120%] text-white/80">
                 A Lotus-Inspired Sanctuary of Purity and Harmony in Ubud
               </h2>
-              <p
+              {/* <p
                 className={`leading-[180%] tracking-[0.5px] text-white/60 text-center transition-all duration-300 ${
                   isExpanded ? "line-clamp-none" : "line-clamp-4"
                 }`}
@@ -65,14 +65,29 @@ export default function Awards() {
                 every detail speaks of balance and intention. This is where
                 romance becomes sacred, and the soul rediscovers itself, held
                 gently in the quiet, unfolding grace of nature.
+              </p> */}
+              <p
+                className={`leading-[180%] tracking-[0.5px] text-white/60 text-center transition-all duration-300 `}
+              >
+                Guided by the sacred spirit of the lotus, Kaamala Resort is a
+                living tribute to the unity of purity, soulfulness, romance, and
+                nature. As the lotus rises unstained from the mud, so too does
+                your journey here, where the weight of pain and stress gently
+                dissolves into stillness. In the serene heart of Ubud, your
+                senses are gracefully reawakened. Cradled by lush tropical
+                greenery, our villas and suites mirror the quiet beauty of
+                lotus, spaces where stillness breathes, emotions soften, and
+                every detail speaks of balance and intention. This is where
+                romance becomes sacred, and the soul rediscovers itself, held
+                gently in the quiet, unfolding grace of nature.
               </p>
 
-              <button
+              {/* <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className="cursor-pointer text-white/60  mt-2 tracking-[1.2px] text-[14px]  border-b-[1px] pb-1 border-white/40"
               >
                 {isExpanded ? "Show Less" : "More"}
-              </button>
+              </button> */}
             </div>
           </div>
         </div>
