@@ -61,118 +61,47 @@ export default function KaamalaSustainability() {
 
         <section className="py-[100px]  max-[560px]:py-[80px]">
           <div className="container">
-            <ul className="space-y-8 ">
-              <li>
-                <button
-                  className="text-white/80 text-[22px] leading-[120%] underline cursor-pointer text-start"
-                  onClick={() =>
-                    openPopup("/sustainability/green-purchasing.webp")
-                  }
-                >
-                  Green Purchasing
-                </button>
-              </li>
-              <li>
-                <button
-                  className="text-white/80 text-[22px] leading-[120%] underline text-start cursor-pointer"
-                  onClick={() =>
-                    openPopup("/sustainability/protect-endangered.webp")
-                  }
-                >
-                  Protect Endangered Species
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Conservation of Biodiversity, Ecosystem and Landscapes
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Resource Conservation
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Wildlife Interaction
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Waste Reduction And Responsible Disposal
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Low-Carbon And Eco-Friendly Transportation
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Education And Environmental Awareness
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Water Conservation And Management
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Supporting Local Communities And Culture
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Renewable Energy
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Energy-Saving Operations
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Safe And Legal Water Sourcing
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Qualified Wastewater Treatment
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Eco-Friendly Materials And Design
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Tree Preservation And Landscaping
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Responsible Natural Site Visits
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Animal Welfare
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Food Waste Minimization
-                </button>
-              </li>
-              <li>
-                <button className="text-white/80 text-[22px] leading-[120%] underline text-start">
-                  Sustainable Cultural Integration
-                </button>
-              </li>
-            </ul>
+            <div className="grid grid-cols-2 gap-[40px] max-[1024px]:grid-cols-1">
+              <div className="relative">
+                <img
+                  src="/sustainability/sustainability.webp"
+                  alt="te"
+                  className="w-full h-full object-cover"
+                />
+                <div className="bg-black/40 absolute inset-0" />
+              </div>
+              <div className="space-y-4">
+                <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%]  max-w-[1024px] mx-auto">
+                  At Kaamala, we believe that true luxury is inseparable from
+                  responsibility. Just as the lotus rises pure and radiant from
+                  its waters, our philosophy is to bloom beautifully while
+                  honoring the source that sustains us. Every element of your
+                  stay—our architecture, dining, spa rituals, and curated
+                  experiences—has been designed with care for Bali’s land,
+                  water, and community.
+                </p>
+                <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%]  max-w-[1024px] mx-auto">
+                  From mindful resource management to cultural preservation and
+                  community empowerment, Kaamala is committed to creating
+                  moments of serenity that also safeguard the island’s future.
+                </p>
+                <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%]  max-w-[1024px] mx-auto">
+                  Your journey with us is not only one of renewal and romance,
+                  but also one of impact—each stay a promise to live gently, and
+                  to leave Bali more beautiful than you found it.
+                </p>
+                <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%]  max-w-[1024px] mx-auto">
+                  Discover more about our sustainability commitments and
+                  initiatives at{" "}
+                  <a
+                    className="font-semibold"
+                    href="https://inivie.com/sustainability"
+                  >
+                    inivie.com/sustainability
+                  </a>
+                </p>
+              </div>
+            </div>
           </div>
         </section>
       </main>

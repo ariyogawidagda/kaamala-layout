@@ -22,12 +22,22 @@ export default function RoomTypeSlider() {
     {
       name: "One Bedroom Villa with Private Pool",
       text: "The One Bedroom Villa with Private Pool at this luxury resort in Ubud is a romantic haven wrapped in natural elegance, featuring wood textures, natural stone, and tropical details overlooking lush jungle. Designed for stillness and connection, it offers a tranquil escape in the heart of Ubud.",
-      image: "/rooms/onebdr.webp",
+      image: "/rooms/one-bedroom.webp",
     },
     {
       name: "Grand One Bedroom Private Pool Villa with Ricefield View",
       text: "Framed by the golden shimmer of Ubud’s iconic rice fields, this villa is a tranquil haven for couples seeking seclusion and serenity. Infused with tropical Balinese charm, it offers a private pool, open-air elegance, and an intimate connection to the rhythms of nature.",
-      image: "/rooms/grand-one-bedroom.webp",
+      image: "/rooms/grand-one.webp",
+    },
+    {
+      name: "Grand 2 Bedroom Private Pool Villa with Ricefield View",
+      text: "Embraced by the gentle sway of emerald rice paddies, this tropical haven invites families or groups into a soulful escape where open-air living and Balinese elegance turn every moment into a shared memory.",
+      image: "/rooms/grand-two.webp",
+    },
+    {
+      name: "Presidential 2 Bedroom Private Pool Villa with Ricefield View",
+      text: "A pinnacle of tropical elegance, this sanctuary blends Balinese design with modern indulgence, featuring panoramic rice field views, a ricefield view jacuzzi, and a private pool for soulful gatherings in nature’s embrace.",
+      image: "/rooms/presidential.webp",
     },
   ];
 

@@ -61,7 +61,7 @@ export default function HomePage() {
         <section className="h-[100vh] w-full relative max-[560px]:h-[80vh]">
           <div className="relative">
             <img
-              src="/bg-room.webp"
+              src="/offers-home.webp"
               alt="bg"
               className="object-cover object-center h-[100vh] w-full"
             />

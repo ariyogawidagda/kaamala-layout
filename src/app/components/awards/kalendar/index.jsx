@@ -223,7 +223,7 @@ export default function KalendarNew() {
           <div className="flex gap-[80px] max-[1350px]:gap-[40px] flex-auto max-[1140px]:gap-[40px] max-[1120px]:gap-[20px]">
             <div className="w-[400px] max-[1220px]:w-[320px]">
               <label
-                className="mb-[5px] !text-[16px] max-[1220px]:!text-[14px] block  font-medium text-white/80"
+                className="mb-[5px] !text-[16px] max-[1220px]:!text-[14px] block  font-medium text-[white]/80"
                 htmlFor="checkin-datepicker"
                 style={{ fontFamily: "var(--font-arsenal" }}
               >
@@ -383,7 +383,7 @@ export default function KalendarNew() {
 
                 <button
                   className="py-[12px]  px-[24px] inline-block w-full
-                     text-white/80 bg-[#2D3D49]/80 transition-transform duration-500 ease-in-out hover:scale-105"
+                     text-white/80 bg-[#2D3D49] transition-transform duration-500 ease-in-out hover:scale-105"
                   aria-label="Link Booking"
                 >
                   Check Availability

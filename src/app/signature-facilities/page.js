@@ -4,21 +4,21 @@ import Footer from "../components/footer";
 export default function KaamalaDinings() {
   const rooms = [
     {
-      name: "Habitat Bistro",
+      name: "Infinity Pool",
       image: "/habitat.webp",
-      desc: "Savor an exquisite journey of Italian fusion cuisine at Habitat Bistro, set against stunning emerald forest vistas at Ubud luxury resort. Pair each culinary creation with premium wines and crafted cocktails.",
+      desc: "Overlooking the lush jungle and sacred river valley, the infinity pool at Kaamala is a tranquil escape where water meets sky. Guests can unwind in total serenity while soaking in panoramic views that reflect the timeless beauty of Ubud’s greenery.",
       link: "/rooms/luxury-pool-villa",
     },
     {
-      name: "Shichirin Ubud",
+      name: "EV Charging Station",
       image: "/shichirin.webp",
-      desc: "Shichirin, an ancient Japanese cooking tradition, inspires a dining experience that transcends time. Rooted in heritage yet elevated with modern refinement, every dish is a tribute to Japan’s rich culinary artistry, a true celebration of flavor crafted with heart.",
+      desc: "Thoughtfully integrated into the resort, the EV charging station empowers sustainable travel without compromise. Guests driving electric vehicles can explore Bali with ease, knowing their journey is both seamless and environmentally conscious.",
       link: "/rooms/suite-room",
     },
     {
-      name: "Seven Paintings Ubud",
+      name: "Shuttle Service",
       image: "/facilities1.webp",
-      desc: "An extraordinary culinary with dinemation experience at Kaamala Resort Ubud redefines fine dining as a luxurious journey where gastronomy becomes art. Inspired by Seven Paintings, a tribute to seven legendary world artists, each course unfolds as a masterpiece of flavor and creativity",
+      desc: "Our complimentary shuttle service brings Ubud’s cultural heart closer to you, from exploring local art markets to arriving at a romantic dinner. Designed for comfort and convenience, it ensures every journey is as effortless as your stay.",
       link: "/rooms/family-villa",
     },
   ];
@@ -33,15 +33,15 @@ export default function KaamalaDinings() {
           <div className="absolute inset-0 bg-black/70"></div>
           <div className="absolute bottom-[80px] container space-y-4">
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[120%] max-w-[1024px] mx-auto text-white/80">
-              Dining at Kaamala Resort
+              Signature Facilities for Elevated Stays
             </h1>
             <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
-              Surrounded by the breathtaking beauty of Ubud, every dining
-              experience at Kaamala Resort & Spa is accompanied by gentle
-              breezes and birdsong, creating an atmosphere of pure serenity.
-              Each ingredient is hand-picked and harvested by local farmers,
-              ensuring only the freshest and most authentic flavors are brought
-              to your table.
+              Designed to enhance every aspect of your stay, Kaamala Resort's
+              signature facilities offer more than just convenience, they
+              reflect a thoughtful balance of luxury, sustainability, and soul.
+              From serene spaces that invite connection to seamless services
+              that honor your time, each facility is crafted to elevate your
+              Ubud experience in effortless grace.
             </p>
           </div>
         </section>
@@ -51,13 +51,13 @@ export default function KaamalaDinings() {
           <div className="container">
             <ul className="text-white/80 flex justify-center gap-[30px] pb-[20px] border-b-[1px] border-white/20">
               <li>
-                <a href="#">Habitat Bistro</a>
+                <a href="#">Infinity Pool</a>
               </li>
               <li>
-                <a href="#">Shichirin Ubud</a>
+                <a href="#">EV Charging Station</a>
               </li>
               <li>
-                <a href="#">Seven Paintings Ubud</a>
+                <a href="#">Shuttle Service</a>
               </li>
             </ul>
             <div>
@@ -99,12 +99,12 @@ export default function KaamalaDinings() {
                   </div>
                 ))}
               </div> */}
-              <div className="grid grid-cols-12 mt-[40px] gap-[60px] max-[1024px]:gap-[20px]">
-                <div className="col-span-8 max-[1204px]:col-span-12 max-[1024px]:mb-[30px] ">
+              <div className="grid grid-cols-12 mt-[40px]  gap-[60px] max-[1024px]:gap-[20px]">
+                <div className="col-span-8 max-[1204px]:col-span-12 max-[1024px]:mb-[30px]">
                   <div className="sticky top-[100px]">
                     <div className="relative">
                       <img
-                        src="/habitat.webp"
+                        src="/signature/infinity-pool.webp"
                         alt=""
                         className="w-full h-[500px] object-cover"
                       />
@@ -112,13 +112,14 @@ export default function KaamalaDinings() {
                     </div>
                     <div className="mt-[20px]">
                       <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Habitat Bistro
+                        Infinity Pool
                       </h3>
                       <p className="text-white/60  leading-[180%] flex-grow">
-                        Savor an exquisite journey of Italian fusion cuisine at
-                        Habitat Bistro, set against stunning emerald forest
-                        vistas at Ubud luxury resort. Pair each culinary
-                        creation with premium wines and crafted cocktails.
+                        Overlooking the lush jungle and sacred river valley, the
+                        infinity pool at Kaamala is a tranquil escape where
+                        water meets sky. Guests can unwind in total serenity
+                        while soaking in panoramic views that reflect the
+                        timeless beauty of Ubud’s greenery.
                       </p>
                       <a
                         href={"#"}
@@ -135,11 +136,11 @@ export default function KaamalaDinings() {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-4 space-y-15 max-[1204px]:col-span-12">
+                <div className="col-span-4 space-y-15 max-[1024px]:col-span-12">
                   <div>
                     <div className="relative">
                       <img
-                        src="/shichirin.webp"
+                        src="/signature/ev-charger.webp"
                         alt=""
                         className="w-full h-[280px] object-cover"
                       />
@@ -147,15 +148,14 @@ export default function KaamalaDinings() {
                     </div>
                     <div className="mt-[20px]">
                       <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Shichirin Ubud
+                        EV Charging Station
                       </h3>
                       <p className="text-white/60  leading-[180%] flex-grow">
-                        Shichirin, an ancient Japanese cooking tradition,
-                        inspires a dining experience that transcends time.
-                        Rooted in heritage yet elevated with modern refinement,
-                        every dish is a tribute to Japan’s rich culinary
-                        artistry, a true celebration of flavor crafted with
-                        heart.
+                        Thoughtfully integrated into the resort, the EV charging
+                        station empowers sustainable travel without compromise.
+                        Guests driving electric vehicles can explore Bali with
+                        ease, knowing their journey is both seamless and
+                        environmentally conscious.
                       </p>
                       <a
                         href={"#"}
@@ -174,7 +174,7 @@ export default function KaamalaDinings() {
                   <div>
                     <div className="relative">
                       <img
-                        src="/facilities1.webp"
+                        src="/signature/shutle.png"
                         alt=""
                         className="w-full h-[280px] object-cover"
                       />
@@ -182,15 +182,14 @@ export default function KaamalaDinings() {
                     </div>
                     <div className="mt-[20px]">
                       <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Seven Paintings Ubud
+                        Shuttle Service
                       </h3>
                       <p className="text-white/60  leading-[180%] flex-grow">
-                        An extraordinary culinary with dinemation experience at
-                        Kaamala Resort Ubud redefines fine dining as a luxurious
-                        journey where gastronomy becomes art. Inspired by Seven
-                        Paintings, a tribute to seven legendary world artists,
-                        each course unfolds as a masterpiece of flavor and
-                        creativity
+                        Our complimentary shuttle service brings Ubud’s cultural
+                        heart closer to you, from exploring local art markets to
+                        arriving at a romantic dinner. Designed for comfort and
+                        convenience, it ensures every journey is as effortless
+                        as your stay.
                       </p>
                       <a
                         href={"#"}

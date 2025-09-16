@@ -54,6 +54,14 @@ export default function KaamalaStory() {
               title: "Water",
               desc: "The source of life and renewal. In harmony with nature, Kaamala sustains and gives back to the world.",
             },
+            {
+              title: "Soil – The 8 Mantras Foundation",
+              desc: "The fertile ground of Kaamala is our 8 Mantras, guiding principles that anchor our vision, inspire our creativity, and nurture authenticity in everything we do",
+            },
+            {
+              title: "Leaves – Community Support",
+              desc: "The leaves that surround and protect the bloom represent our people and partners. Kaamala flourishes by uplifting the community and creating shared prosperity.",
+            },
           ].map((item, idx) => (
             <div key={idx} className=" p-6 shadow-md space-y-4">
               <h3 className="text-white/80 text-[22px] ">{item.title}</h3>

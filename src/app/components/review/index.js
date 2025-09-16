@@ -31,6 +31,26 @@ const reviews = [
     author: "Maxim Jack",
     source: "Tripadvisor",
   },
+  {
+    text: "Kaamala Resort Ubud is an excellent choice thanks to its central location.",
+    author: "Epicure Asia",
+    source: "Epicure Asia",
+  },
+  {
+    text: "It’s like having your own private villa but with the services you can expect from a luxury resorts",
+    author: "Asianwanderlust",
+    source: "Asianwanderlust",
+  },
+  {
+    text: "At Kaamala, each stay is defined not only by luxury but also by a sense of discovery. The exclusive resort provides a unique fusion of luxury and nature, with an eco-friendly ethos and world-class amenities",
+    author: "The Bali Bible",
+    source: "The Bali Bible",
+  },
+  {
+    text: "exquisite luxury getaway suitable for both romantic and family occasion in Ubud",
+    author: "Bali Buddies",
+    source: "Bali Buddies",
+  },
 ];
 
 export default function GuestReviews() {
@@ -38,7 +58,7 @@ export default function GuestReviews() {
     <section className="bg-[#3c5160] pb-[100px] max-[560px]:pb-[70px]">
       <div className="container mx-auto text-center">
         <h2 className="text-[28px] tracking-[0.5px] text-white/80 mb-14 max-[560px]:mb-[40px]">
-          Guest Reviews
+          Stories from Our Esteemed Guests and Partners
         </h2>
 
         <Swiper

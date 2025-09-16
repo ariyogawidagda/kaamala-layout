@@ -5,19 +5,19 @@ export default function KaamalaAccomodation() {
   const rooms = [
     {
       name: "One Bedroom Villa with Private Pool",
-      image: "/rooms/onebdr.webp",
+      image: "/rooms/one-bedroom.webp",
       desc: "Kaamala’s One Bedroom Villa with Private Pool embraces natural elegance with rich wood, textured stone, and tropical touches, opening to a lush jungle view that invites stillness and connection, a perfect serene escape for two.",
       link: "/rooms/luxury-pool-villa",
     },
     {
       name: "Grand 1 Bedroom Private Pool Villa with Ricefield View",
-      image: "/rooms/grand-one-bedroom.webp",
+      image: "/rooms/grand-one.webp",
       desc: "Framed by the golden shimmer of Ubud’s iconic rice fields, this villa is a tranquil haven infused with tropical Balinese charm, offering a private pool, open-air elegance, and an intimate escape into the gentle rhythm of nature.",
       link: "/rooms/suite-room",
     },
     {
       name: "Grand 2 Bedroom Private Pool Villa with Ricefield View",
-      image: "/rooms/grand-two-bedroom.webp",
+      image: "/rooms/grand-two.webp",
       desc: "Embraced by the gentle sway of emerald rice paddies, this tropical haven invites families or groups into a soulful escape where open-air living and Balinese elegance turn every moment into a shared memory",
       link: "/rooms/family-villa",
     },
