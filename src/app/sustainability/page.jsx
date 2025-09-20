@@ -1,42 +1,8 @@
-"use client";
-
 import Header from "../components/header";
 import Footer from "../components/footer";
-import { useState } from "react";
+import SustainabilityTabs from "../components/sustainabilitytabs";
+
 export default function KaamalaSustainability() {
-  const [show, setShow] = useState(false);
-  const [imageSrc, setImageSrc] = useState(null);
-
-  const openPopup = (src) => {
-    setImageSrc(src);
-    setShow(true);
-  };
-
-  const Popup = () => {
-    if (!show || !imageSrc) return null;
-
-    return (
-      <div className="fixed inset-0 z-[9999] flex items-center justify-center bg-black/60 backdrop-blur-sm">
-        <div className="relative w-[90%] max-w-xl  overflow-hidden shadow-lg">
-          {/* Tombol Close */}
-          <button
-            onClick={() => setShow(false)}
-            className="absolute top-3 right-3 z-10  p-1  text-black text-[22px] cursor-pointer"
-          >
-            X{/* <FiX className="w-5 h-5" /> */}
-          </button>
-
-          {/* Gambar Banner */}
-          <img
-            src={imageSrc}
-            alt="Popup Banner"
-            className="w-full h-auto object-cover"
-          />
-        </div>
-      </div>
-    );
-  };
-
   return (
     <>
       <Header />
@@ -59,7 +25,7 @@ export default function KaamalaSustainability() {
           </div>
         </section>
 
-        <section className="py-[100px]  max-[560px]:py-[80px]">
+        {/* <section className="py-[100px]  max-[560px]:py-[80px]">
           <div className="container">
             <div className="grid grid-cols-2 gap-[40px] max-[1024px]:grid-cols-1">
               <div className="relative">
@@ -103,9 +69,10 @@ export default function KaamalaSustainability() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <SustainabilityTabs />
       </main>
-      <Popup />
       <Footer />
     </>
   );

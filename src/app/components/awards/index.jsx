@@ -39,7 +39,7 @@ export default function Awards() {
           <div className="grid grid-cols-2 min-[768px]:mt-[30px] gap-[80px] max-[560px]:gap-[40px]  max-[1024px]:grid-cols-1">
             <div className="relative">
               <img
-                src="/gtwo.webp"
+                src="/homepage/about.webp"
                 alt="Luxury Resort Ubud"
                 className="w-full h-full object-cover shadow-md "
               />
@@ -47,7 +47,7 @@ export default function Awards() {
             </div>
             <div className="space-y-5 flex flex-col justify-center items-center">
               <h2 className="text-[28px] text-center tracking-[0.5px] capitalize leading-[120%] text-white/80">
-                A Lotus-Inspired Sanctuary of Purity and Harmony in Ubud
+                A Lotus-inspired Eco Luxury Resort with Multi Experience
               </h2>
               {/* <p
                 className={`leading-[180%] tracking-[0.5px] text-white/60 text-center transition-all duration-300 ${
