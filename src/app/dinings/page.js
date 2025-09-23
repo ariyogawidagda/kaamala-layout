@@ -35,6 +35,11 @@ export default function KaamalaDinings() {
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[120%] max-w-[1024px] mx-auto text-white/80">
               Dining at Kaamala Resort
             </h1>
+          </div>
+        </section>
+
+        <section className="container">
+          <div className="mt-[80px]">
             <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
               Surrounded by the breathtaking beauty of Ubud, every dining
               experience at Kaamala Resort & Spa is accompanied by gentle

@@ -15,16 +15,16 @@ export default function KaamalaSustainability() {
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[120%] max-w-[1024px] mx-auto text-white/80">
               Our Commitments in Sustainability & Eco-Friendly Tourism
             </h1>
-            <p className="text-white/70 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
-              For us, sustainability is not an added feature, it is the
-              foundation of what we call conscious luxury. Every guest who stays
-              at our Ubud luxury resort, contributes to a greener, more mindful
-              future. Here, every moment of indulgence becomes an act of
-              preservation.
-            </p>
           </div>
         </section>
-
+        <div className="mt-[80px]">
+          <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
+            For us, sustainability is not an added feature, it is the foundation
+            of what we call conscious luxury. Every guest who stays at our Ubud
+            luxury resort, contributes to a greener, more mindful future. Here,
+            every moment of indulgence becomes an act of preservation.
+          </p>
+        </div>
         {/* <section className="py-[100px]  max-[560px]:py-[80px]">
           <div className="container">
             <div className="grid grid-cols-2 gap-[40px] max-[1024px]:grid-cols-1">

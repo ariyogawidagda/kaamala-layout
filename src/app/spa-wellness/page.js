@@ -36,6 +36,11 @@ export default function KaamalaDinings() {
               Spa and Wellness at Kaamala Resort
             </h1>
             <hr className="mx-auto my-6 h-px w-12 bg-gradient-to-r from-[#D4AF37] to-[#B5963F]" />
+          </div>
+        </section>
+
+        <section className="container">
+          <div className="mt-[80px]">
             <p className="text-white/60 text-[15px] leading-[180%] max-w-2xl mx-auto">
               For generations, Bali has been a sanctuary of wellness, where
               ancient healing traditions continue to flourish. Our spa in Ubud

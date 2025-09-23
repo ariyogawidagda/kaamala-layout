@@ -14,13 +14,13 @@ export default function KaamalaMantras() {
       number: "02",
       title: "Respect Local Culture",
       desc: "Each brand lives in harmony with its location. We respect local values, adapt with intention, and honor the traditions that shape how we serve.",
-      img: "/mantras/1.webp",
+      img: "/mantras/2.webp",
     },
     {
       number: "03",
       title: "Responsible to Mother Earth",
       desc: "Nature is not a resource — she’s a partner. We design in balance with the land and take real actions to protect and regenerate what we touch.",
-      img: "/mantras/1.webp",
+      img: "/mantras/3.webp",
     },
     {
       number: "04",
@@ -32,7 +32,7 @@ export default function KaamalaMantras() {
       number: "05",
       title: "Technology Adaptation",
       desc: "Technology is a tool, not the hero. We apply tech to enhance clarity, comfort, and emotional connection — never at the cost of human touch.",
-      img: "/mantras/1.webp",
+      img: "/mantras/5.webp",
     },
     {
       number: "06",
@@ -44,7 +44,7 @@ export default function KaamalaMantras() {
       number: "07",
       title: "Sustainability Impact",
       desc: "We take action that lasts. Our commitment to sustainability is grounded in visible results — for people, nature, and future generations.",
-      img: "/mantras/1.webp",
+      img: "/mantras/7.webp",
     },
     {
       number: "08",

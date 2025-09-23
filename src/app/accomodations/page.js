@@ -61,6 +61,10 @@ export default function KaamalaAccomodation() {
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[120%] max-w-[1024px] mx-auto text-white/80">
               Kaamala Resort Accommodation
             </h1>
+          </div>
+        </section>
+        <section className="container">
+          <div className="mt-[80px]">
             <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
               Kaamala Resort is a hidden sanctuary in Ubud, offering 10
               distinctive room types that blend contemporary elegance with the
@@ -70,7 +74,6 @@ export default function KaamalaAccomodation() {
             </p>
           </div>
         </section>
-
         {/* WHAT MAKES SPECIAL */}
         <section className="py-[100px]  max-[560px]:py-[80px]">
           <div className="container">

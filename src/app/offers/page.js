@@ -14,6 +14,11 @@ export default function KaamalaDinings() {
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[120%] max-w-[1024px] mx-auto text-white/80">
               Exclusive Luxury Offers for Your Stay in Kaamala
             </h1>
+          </div>
+        </section>
+
+        <section className="container">
+          <div className="mt-[80px]">
             <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
               Experience more than just a stay at Kaamala, every guest is
               invited to choose from a curated collection of exclusive luxury
@@ -27,7 +32,7 @@ export default function KaamalaDinings() {
         </section>
 
         {/* WHAT MAKES SPECIAL */}
-        <section className="py-[100px]  max-[560px]:py-[80px]">
+        <section className="py-[80px]  max-[560px]:py-[80px]">
           <div className="container">
             <ul className="text-white/80 flex justify-center gap-[30px] pb-[20px] border-b-[1px] border-white/20 max-[560px]:text-center">
               <li>

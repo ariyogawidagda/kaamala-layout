@@ -15,17 +15,20 @@ export default function KaamalaAwards() {
               Our Journey of Excellence Marked by Awards as The Best Resort in
               Bali
             </h1>
-            <p className="text-white/70 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
-              As one of Bali’s most celebrated luxury resorts in Ubud, Bali, we
-              are proud of the recognition that Kaamala has earned through
-              prestigious awards around the world. We remain dedicated to
-              crafting experiences that are as meaningful as they are memorable.
-            </p>
           </div>
         </section>
 
         <section className="py-[100px] max-[560px]:py-[80px]">
           <div className="container ">
+            <div className="mb-[80px]">
+              <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
+                As one of Bali’s most celebrated luxury resorts in Ubud, Bali,
+                we are proud of the recognition that Kaamala has earned through
+                prestigious awards around the world. We remain dedicated to
+                crafting experiences that are as meaningful as they are
+                memorable.
+              </p>
+            </div>
             <h2 className="text-[28px] tracking-[0.5px] text-center capitalize leading-[180%] text-white/80">
               Our Awards
             </h2>

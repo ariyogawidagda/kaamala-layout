@@ -6,7 +6,6 @@ import Link from "next/link";
 export default function Navbar({ setOpen, slug }) {
   const ref = useRef(null);
   const refButton = useRef(null);
-  const promo = useRef(null);
 
   useEffect(() => {
     let previousScrollPosition = window.pageYOffset;
@@ -17,7 +16,6 @@ export default function Navbar({ setOpen, slug }) {
         const isMobile = window.innerWidth <= 768;
         if (isMobile) {
           if (currentScrollPosition > previousScrollPosition) {
-            // ref.current.classList.add("hideY");
             ref.current.classList.add("bg-[var(--headerColor)]", "shadow-md");
           } else {
             if (currentScrollPosition === 0) {
@@ -28,9 +26,7 @@ export default function Navbar({ setOpen, slug }) {
             } else {
               ref.current.classList.add("bg-[var(--headerColor)]", "shadow-md");
             }
-            ref.current.classList.remove("hideY");
           }
-
           previousScrollPosition = currentScrollPosition;
         } else {
           if (scrollTop > 50) {
@@ -68,35 +64,6 @@ export default function Navbar({ setOpen, slug }) {
     };
 
     handleScroll();
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const currentScrollPosition = window.pageYOffset;
-      if (promo.current) {
-        const scrollTop = window.scrollY;
-        const isMobile = window.innerWidth <= 768;
-        if (isMobile) {
-          if (currentScrollPosition === 0) {
-            promo.current.classList.remove("hiddenn");
-          } else {
-            promo.current.classList.add("hiddenn");
-          }
-        } else {
-          if (scrollTop > 50) {
-            promo.current.classList.add("hiddenn");
-          } else {
-            promo.current.classList.remove("hiddenn");
-          }
-        }
-      }
-    };
 
     window.addEventListener("scroll", handleScroll);
 
@@ -143,7 +110,7 @@ export default function Navbar({ setOpen, slug }) {
       >
         <div
           className={`flex container py-[16px] justify-between items-center min-[768px]:border-b-[1px] min-[768px]:border-white/20  ${
-            hidden ? "hidden" : ""
+            hidden ? "md:hidden" : ""
           }`}
         >
           <div className="order-2 max-[560px]:order-1">

@@ -395,6 +395,11 @@ h5 {
   opacity: 20%;
 }
 
+p {
+  letter-spacing: 1px !important;
+  font-size: 15px !important;
+}
+
 @media (max-width: 1200px) {
   .swiperPromo .swiper-pagination {
     justify-content: center;

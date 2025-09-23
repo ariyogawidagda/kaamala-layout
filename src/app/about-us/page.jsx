@@ -115,7 +115,7 @@ export default function KaamalaStory() {
             <h1 className="text-[36px] tracking-[0.5px] text-center leading-[120%] max-w-[1024px] mx-auto text-white/80">
               The Story of Kaamala Resort Ubud
             </h1>
-            {/* <p className="text-white/70 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
+            {/* <p className="text-white/60 text-[14px] tracking-[0.5px] leading-[180%] text-center max-w-[1024px] mx-auto">
               Like the lotus rising from the water, Kaamala Luxury Resort & Spa
               Ubud by Ini Vie Hospitality embodies purity, renewal, and harmony,
               rooted deeply in Balinese philosophy and tradition. As a luxury
@@ -187,7 +187,7 @@ export default function KaamalaStory() {
             <h2 className="tracking-[0.5px] capitalize leading-[120%] text-center text-white/80 mb-[60px]">
               What Makes Kaamala Resort Ubud Special?
             </h2>
-            {/* <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto">
+            <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto">
               <div className="relative">
                 <img
                   src="/aboutus/about.webp"
@@ -201,27 +201,30 @@ export default function KaamalaStory() {
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Lotus Inspired Eco-Luxury Resort
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
-                    Perfectly positioned near Ubud Central and the Sacred Monkey
-                    Forest, Kaamala offers effortless access to the island’s
-                    most treasured cultural landmark
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
+                    From the sacred lotus springs Kaamala, each pillar entwined
+                    in a hymn of harmony. Crowned with the Eco Tourism Gold
+                    Badge, it becomes a haven where every step is but a vow to
+                    nature’s eternal soul.
                   </p>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     The Lotus Experience: Discover Luxury Multi Experience
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
-                    Framed by pristine landscapes, we invite you to savor
-                    breathtaking views that blend seamlessly with Ubud’s serene
-                    natural surroundings
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
+                    As a lotus in radiant bloom, Kaamala unveils a symphony of
+                    the senses, each moment a petal of wonder. From the
+                    ambrosial feasts of Japan and Italy to the healing caress of
+                    Balinese-inspired wellness, it awakens the spirit to linger,
+                    to taste, and to dream.
                   </p>
                 </div>
                 <div className="space-y-3">
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Kaamala Signature Rituals
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
                     Every day at Kaamala unfolds like the lotus — from its roots
                     in gratitude to its bloom in serenity. Our curated rituals
                     guide your journey from morning light to evening calm,
@@ -233,7 +236,7 @@ export default function KaamalaStory() {
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Meet the Little Friends of the Forest
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
                     At Kaamala, we are blessed with visits from our Sacred
                     Neighbors — playful monkeys from the nearby forest. Their
                     presence is a gentle reminder that our resort is part of
@@ -245,23 +248,15 @@ export default function KaamalaStory() {
                   </p>
                 </div>
               </div>
-            </div> */}
-            {/* <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto mt-[80px]">
-              <div className="relative">
-                <img
-                  src="/aboutus/about.webp"
-                  alt="Ubud Nature"
-                  className="shadow-lg w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black/40"></div>
-              </div>
-              <div className="space-y-6">
+            </div>
+            <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto mt-[80px]">
+              <div className="space-y-6  max-lg:order-2">
                 <div className="space-y-3">
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Strategic Location Close to Ubud Central & Sacred Monkey
                     Forest
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
                     Perfectly positioned near Ubud Central and the Sacred Monkey
                     Forest, Kaamala offers effortless access to the island’s
                     most treasured cultural landmark
@@ -271,7 +266,7 @@ export default function KaamalaStory() {
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Top Notch Hospitality
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
                     We welcome you as part of this island’s soul, curating
                     meaningful moments and timeless stories throughout your
                     stay.
@@ -281,7 +276,7 @@ export default function KaamalaStory() {
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Sustainability is Our Quiet Luxury
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
                     We honor the land we stand on and give back through
                     meaningful actions that nurture the earth’s gifts. For us,
                     true luxury is found in harmony with nature.
@@ -291,17 +286,24 @@ export default function KaamalaStory() {
                   <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                     Breathtaking Views Close to Nature
                   </h3>
-                  <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                  <p className="leading-[180%] tracking-[0.5px] text-white/60">
                     Framed by pristine landscapes, we invite you to savor
                     breathtaking views that blend seamlessly with Ubud’s serene
                     natural surroundings
                   </p>
                 </div>
               </div>
-            </div> */}
-            <div className="mt-[80px]">
+              <div className="relative max-lg:order-1">
+                <img
+                  src="/aboutus/about.webp"
+                  alt="Ubud Nature"
+                  className="shadow-lg w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/40"></div>
+              </div>
+            </div>
+            {/* <div className="mt-[80px]">
               <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto">
-                {/* Left Side: Image */}
                 <div className="relative ">
                   <img
                     src="/aboutus/about.webp"
@@ -311,7 +313,6 @@ export default function KaamalaStory() {
                   <div className="absolute inset-0 bg-black/40"></div>
                 </div>
 
-                {/* Right Side: Tabs + Content */}
                 <div className="space-y-6 max-lg:order-1">
                   <div className="flex gap-4 border-b border-white/20 pb-2">
                     {tabsContentt.map((tab) => (
@@ -329,7 +330,6 @@ export default function KaamalaStory() {
                     ))}
                   </div>
 
-                  {/* Content */}
                   <div className="space-y-6">
                     {tabContent[activeTab1].map((item, i) => (
                       <div key={i} className="space-y-3">
@@ -344,7 +344,7 @@ export default function KaamalaStory() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -353,19 +353,19 @@ export default function KaamalaStory() {
             <h2 className="tracking-[0.5px] capitalize leading-[120%] text-center text-white/80 mb-[60px]">
               Kaamala Signature Rituals
             </h2>
-            <div className="mt-[80px]">
-              <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto">
+            <div className="">
+              <div className=" max-w-6xl mx-auto">
                 {/* Right Side: Tabs + Content */}
-                <div className="space-y-6 max-lg:order-2">
+                <div className=" space-y-6  grid grid-cols-12 ">
                   {/* Tabs */}
-                  <div className="flex gap-4 border-b border-white/20 pb-2">
+                  <div className="flex justify-center flex-col gap-4 col-span-4 max-md:col-span-12 max-md:border-b-[1px] max-md:border-white/20 max-md:pb-4 max-md:flex-row">
                     {tabs.map((tab) => (
                       <button
                         key={tab.id}
                         onClick={() => setActiveTab(tab.id)}
-                        className={`pb-2 text-sm tracking-wide transition-all ${
+                        className={`pb-2 text-sm tracking-wide transition-all cursor-pointer ${
                           activeTab === tab.id
-                            ? "text-white border-b-2 border-white"
+                            ? "text-white"
                             : "text-white/50 hover:text-white/80"
                         }`}
                       >
@@ -375,7 +375,7 @@ export default function KaamalaStory() {
                   </div>
 
                   {/* Content */}
-                  <div className="space-y-6">
+                  <div className="space-y-6 border-l border-white/10 pl-10 col-span-8 max-md:col-span-12 max-md:border-none max-md:pl-0">
                     {content[activeTab].map((item, i) => (
                       <div key={i} className="space-y-3">
                         <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
@@ -387,16 +387,6 @@ export default function KaamalaStory() {
                       </div>
                     ))}
                   </div>
-                </div>
-
-                {/* Left Side: Image */}
-                <div className="relative">
-                  <img
-                    src="/aboutus/about.webp"
-                    alt="Rituals"
-                    className="shadow-lg w-full h-full object-cover"
-                  />
-                  <div className="absolute inset-0 bg-black/40"></div>
                 </div>
               </div>
             </div>
@@ -414,7 +404,7 @@ export default function KaamalaStory() {
                 <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                   Luxury, Unfolded in Every Stay
                 </h3>
-                <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                <p className="leading-[180%] tracking-[0.5px] text-white/60">
                   Every stay is defined by thoughtful details, creating a
                   seamless and elevated luxury experience for our guests.
                 </p>
@@ -423,7 +413,7 @@ export default function KaamalaStory() {
                 <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                   Explore the Nature’s Magic and Timeless Culture
                 </h3>
-                <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                <p className="leading-[180%] tracking-[0.5px] text-white/60">
                   We thoughtfully curate each activity and experience to immerse
                   our guests in Bali’s pristine nature and timeless culture.
                 </p>
@@ -432,7 +422,7 @@ export default function KaamalaStory() {
                 <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                   Discover the Journey of Renewal
                 </h3>
-                <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                <p className="leading-[180%] tracking-[0.5px] text-white/60">
                   At Kaamala, wellness is not just a ritual, it is a journey of
                   renewal. Inspired by the lotus, our spa and wellness programs
                   guide you into calm and balance.
@@ -442,7 +432,7 @@ export default function KaamalaStory() {
                 <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
                   Stay with Impact
                 </h3>
-                <p className="leading-[180%] tracking-[0.5px] text-white/70">
+                <p className="leading-[180%] tracking-[0.5px] text-white/60">
                   Guided by the purity of the lotus, every moment becomes a
                   petal of significance, crafted to inspire and transform.
                 </p>
