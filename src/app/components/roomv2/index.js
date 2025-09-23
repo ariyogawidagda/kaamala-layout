@@ -49,12 +49,12 @@ export default function RoomTypeSlider() {
   return (
     <section className="relative h-[100vh] max-[560px]:h-[80vh] w-full">
       {/* Background image berubah sesuai item aktif */}
-      <img
-        src={roomTypes[activeIndex].image}
-        alt={roomTypes[activeIndex].name}
-        className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700"
+      <div
+        className="absolute inset-0 w-full h-full bg-cover bg-fixed bg-center transition-opacity duration-700"
+        style={{
+          backgroundImage: `url(${roomTypes[activeIndex].image})`,
+        }}
       />
-
       {/* Overlay biar teks kebaca */}
       <div className="absolute inset-0 bg-black/75" />
 
