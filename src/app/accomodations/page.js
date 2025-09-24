@@ -43,7 +43,7 @@ export default function KaamalaAccomodation() {
     },
     {
       name: "The Bloom Continues: A Refined Retreat ",
-      image: "/rooms/grand-suite-forest.webp",
+      image: "/rooms/blooms.webp",
       desc: "Coming Soon",
       link: "/rooms/suite-room",
     },

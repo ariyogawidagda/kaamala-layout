@@ -209,7 +209,7 @@ export default function KaamalaDinings() {
                   <div>
                     <div className="relative">
                       <img
-                        src="/signature/shutle.png"
+                        src="/signature/shutle.webp"
                         alt=""
                         className="w-full h-[280px] object-cover"
                       />

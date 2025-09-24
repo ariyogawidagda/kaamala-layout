@@ -165,7 +165,9 @@ export default function KaamalaStory() {
             },
           ].map((item, idx) => (
             <div key={idx} className=" p-6 shadow-md space-y-4">
-              <h3 className="text-white/80 text-[22px] ">{item.title}</h3>
+              <h3 className="text-white/80 tracking-[0.5px] leading-[180%] text-[22px] ">
+                {item.title}
+              </h3>
               <p className="text-white/60 text-sm leading-relaxed">
                 {item.desc}
               </p>
@@ -198,7 +200,7 @@ export default function KaamalaStory() {
               </div>
               <div className="space-y-6">
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Lotus Inspired Eco-Luxury Resort
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -209,7 +211,7 @@ export default function KaamalaStory() {
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     The Lotus Experience: Discover Luxury Multi Experience
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -221,7 +223,7 @@ export default function KaamalaStory() {
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Kaamala Signature Rituals
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -233,7 +235,7 @@ export default function KaamalaStory() {
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Meet the Little Friends of the Forest
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -252,7 +254,7 @@ export default function KaamalaStory() {
             <div className="grid grid-cols-2 max-lg:grid-cols-1 gap-15 max-[560px]:gap-8 max-w-6xl mx-auto mt-[80px]">
               <div className="space-y-6  max-lg:order-2">
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Strategic Location Close to Ubud Central & Sacred Monkey
                     Forest
                   </h3>
@@ -263,7 +265,7 @@ export default function KaamalaStory() {
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Top Notch Hospitality
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -273,7 +275,7 @@ export default function KaamalaStory() {
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Sustainability is Our Quiet Luxury
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -283,7 +285,7 @@ export default function KaamalaStory() {
                   </p>
                 </div>
                 <div className="space-y-3">
-                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                  <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                     Breathtaking Views Close to Nature
                   </h3>
                   <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -295,7 +297,7 @@ export default function KaamalaStory() {
               </div>
               <div className="relative max-lg:order-1">
                 <img
-                  src="/aboutus/about.webp"
+                  src="/aboutus/about-1.webp"
                   alt="Ubud Nature"
                   className="shadow-lg w-full h-full object-cover"
                 />
@@ -378,7 +380,7 @@ export default function KaamalaStory() {
                   <div className="space-y-6 border-l border-white/10 pl-10 col-span-8 max-md:col-span-12 max-md:border-none max-md:pl-0">
                     {content[activeTab].map((item, i) => (
                       <div key={i} className="space-y-3">
-                        <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                        <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                           {item.title}
                         </h3>
                         <p className="leading-[180%] tracking-[0.5px] text-white/60">
@@ -429,7 +431,7 @@ export default function KaamalaStory() {
                 </p>
               </div>
               <div className="bg-transparent shadow-lg p-6 space-y-3">
-                <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                <h3 className="text-[22px] tracking-[0.5px] capitalize leading-[180%] text-white/80">
                   Stay with Impact
                 </h3>
                 <p className="leading-[180%] tracking-[0.5px] text-white/60">

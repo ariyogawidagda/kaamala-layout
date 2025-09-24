@@ -142,7 +142,7 @@ export default function KaamalaDinings() {
                       href="#"
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
                     >
-                      Discover More
+                      Book Now
                       <img
                         src={`arrow.png`}
                         loading="lazy"
@@ -157,7 +157,7 @@ export default function KaamalaDinings() {
                 <div className="col-span-7 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/offers/saver.webp"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
@@ -170,7 +170,7 @@ export default function KaamalaDinings() {
                 <div className="col-span-7 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/offers/honeymoon.jpg"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
@@ -287,7 +287,7 @@ export default function KaamalaDinings() {
                       href="#"
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
                     >
-                      Discover More
+                      Book Now
                       <img
                         src={`arrow.png`}
                         loading="lazy"
@@ -402,7 +402,7 @@ export default function KaamalaDinings() {
                       href="#"
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
                     >
-                      Discover More
+                      Book Now
                       <img
                         src={`arrow.png`}
                         loading="lazy"
@@ -417,7 +417,7 @@ export default function KaamalaDinings() {
                 <div className="col-span-7 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/offers/say.webp"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />

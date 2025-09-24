@@ -57,7 +57,7 @@ export default function Facilities() {
               <div className="col-span-5 max-lg:col-span-12 order-2 max-lg:order-1">
                 <div className="img-container relative overflow-hidden shadow-md">
                   <img
-                    src={"/shichirin.webp"}
+                    src={"/homepage/shichirin.webp"}
                     alt="Shichirin Ubud"
                     loading="lazy"
                     className="w-full h-[550px] max-[560px]:h-[350px] object-cover object-center"

@@ -25,6 +25,7 @@ export default function CtaOffers() {
       }
     );
   }, []);
+
   return (
     <>
       <section className="h-[100vh] w-full relative max-[560px]:h-[80vh]">
@@ -42,7 +43,7 @@ export default function CtaOffers() {
               <h2 className="text-[28px] tracking-[0.5px]  leading-[180%] text-white/80 ">
                 Elevate Your Stay with Exclusive Offers
               </h2>
-              <p className="text-white/60 text-[14px] tracking-[0.5px] ">
+              <p className="text-white/60 text-[14px] tracking-[0.5px]  ">
                 Discover curated promos and exclusive offers at Kaamala Resort,
                 designed to elevate every moment of your stay. <br />
                 From romantic escapes to indulgent experiences, our privileges

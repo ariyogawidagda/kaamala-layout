@@ -34,30 +34,45 @@ export default function KaamalaAwards() {
             </h2>
             <div className="flex flex-wrap justify-center gap-[60px] max-[560px]:gap-[40px] mt-[40px] max-w-[1280px] mx-auto max-[560px]:mt-[20px]">
               <div className="p-6 py-6 bg-transparent shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-[768px]:max-w-[300px] w-full flex flex-col justify-between">
-                <h3 className="!text-[19px] tracking-[0.5px] text-white/80 leading-[160%]">
-                  Best Luxury Resort 2023
-                </h3>
-                <p className="text-white/70 italic tracking-[0.5px] mt-3">
-                  TripAdvisor
-                </p>
+                <a
+                  href="https://blog.inivie.com/kaamala-resort-ubud-wins-best-luxury-resort-2023-by-tripadvisor/"
+                  target="_blank"
+                >
+                  <h3 className="!text-[19px] tracking-[0.5px] text-white/80 leading-[160%]">
+                    Best Luxury Resort 2023
+                  </h3>
+                  <p className="text-white/70 italic tracking-[0.5px] mt-3">
+                    TripAdvisor
+                  </p>
+                </a>
               </div>
 
               <div className="p-6 py-6 bg-transparent shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-[768px]:max-w-[300px] w-full flex flex-col justify-between">
-                <h3 className="!text-[19px] text-white/80 tracking-[0.5px] leading-[160%]">
-                  Top 10 Honeymoon Destination 2024
-                </h3>
-                <p className="text-white/70 italic tracking-[0.5px] mt-3">
-                  Conde Nast Traveler
-                </p>
+                <a
+                  href="https://blog.inivie.com/kaamala-resort-ubud-named-among-the-top-10-honeymoon-destinations-2024-by-conde-nast-traveler/"
+                  target="_blank"
+                >
+                  <h3 className="!text-[19px] text-white/80 tracking-[0.5px] leading-[160%]">
+                    Top 10 Honeymoon Destination 2024
+                  </h3>
+                  <p className="text-white/70 italic tracking-[0.5px] mt-3">
+                    Conde Nast Traveler
+                  </p>
+                </a>
               </div>
 
               <div className="p-6 py-6 bg-transparent shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 min-[768px]:max-w-[300px] w-full flex flex-col justify-between">
-                <h3 className="!text-[19px] text-white/80 tracking-[0.5px] leading-[160%]">
-                  World Luxury Hotel Awards 2025
-                </h3>
-                <p className="text-white/70 italic tracking-[0.5px] mt-3">
-                  Global Winner
-                </p>
+                <a
+                  href="https://inivie.com/blog/kaamala-resort-ubud-honored-as-global-winner-2025-by-world-luxury-hotel-awards"
+                  target="_blank"
+                >
+                  <h3 className="!text-[19px] text-white/80 tracking-[0.5px] leading-[160%]">
+                    World Luxury Hotel Awards 2025
+                  </h3>
+                  <p className="text-white/70 italic tracking-[0.5px] mt-3">
+                    Global Winner
+                  </p>
+                </a>
               </div>
             </div>
           </div>

@@ -74,7 +74,7 @@ export default function KaamalaDinings() {
                       warmth, nature, and love.
                     </p>
                   </div>
-                  <div className="pb-2">
+                  {/* <div className="pb-2">
                     <a
                       href={"#"}
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
@@ -87,7 +87,7 @@ export default function KaamalaDinings() {
                         className="w-[27px] h-auto"
                       />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="grid grid-cols-12  bg-white/5">
@@ -104,7 +104,7 @@ export default function KaamalaDinings() {
                       delight, and mark the beauty of your shared moments.
                     </p>
                   </div>
-                  <div className="pb-2">
+                  {/* <div className="pb-2">
                     <a
                       href={"#"}
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
@@ -117,7 +117,7 @@ export default function KaamalaDinings() {
                         className="w-[27px] h-auto"
                       />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-span-7 max-[1024px]:col-span-12">
                   <div className="relative">
@@ -155,7 +155,7 @@ export default function KaamalaDinings() {
                       expression of love.
                     </p>
                   </div>
-                  <div className="pb-2">
+                  {/* <div className="pb-2">
                     <a
                       href={"#"}
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
@@ -168,7 +168,7 @@ export default function KaamalaDinings() {
                         className="w-[27px] h-auto"
                       />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
               </div>
               <div className="grid grid-cols-12  bg-white/5">
@@ -186,7 +186,7 @@ export default function KaamalaDinings() {
                       breathtaking celebration of love and lasting commitment.
                     </p>
                   </div>
-                  <div className="pb-2">
+                  {/* <div className="pb-2">
                     <a
                       href={"#"}
                       className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
@@ -199,7 +199,7 @@ export default function KaamalaDinings() {
                         className="w-[27px] h-auto"
                       />
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="col-span-7 max-[1024px]:col-span-12">
                   <div className="relative">

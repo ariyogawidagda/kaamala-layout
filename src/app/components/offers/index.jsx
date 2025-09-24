@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 export default function Offers() {
   const offers = [
     {
-      img: "/spa.webp",
+      img: "/homepage/spa-bisma.webp",
       title: "Svaha Spa Bisma",
       link: "#",
     },

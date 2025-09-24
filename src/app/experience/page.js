@@ -47,18 +47,15 @@ export default function KaamalaDinings() {
                 <a href="#">Daily Guest Activities</a>
               </li>
               <li>
-                <a href="#">Wellness Yoga Class</a>
-              </li>
-              <li>
-                <a href="#">Spiritual Awakening Journey</a>
+                <a href="#">Wellness Exploration</a>
               </li>
               <li>
                 <a href="#">Nature Exploration</a>
               </li>
               <li>
-                <a href="#">Private Sunrise Trekking</a>
+                <a href="#">Cultural Exploration</a>
               </li>
-              <li className="relative">
+              {/* <li className="relative">
                 <button
                   onClick={() => setOpen(!open)}
                   className="flex items-center gap-1 cursor-pointer hover:text-white"
@@ -133,327 +130,305 @@ export default function KaamalaDinings() {
                     </a>
                   </div>
                 )}
-              </li>
+              </li> */}
             </ul>
             <div className="border-b border-white/20 pb-4 md:border-none">
               <select className=" text-white/80  bg-[#3C5160] tracking-[0.5px] w-full md:hidden ">
                 <option className="text-white/80">
                   Daily Guest Activities
                 </option>
-                <option className="text-white/80">EV Charging Station</option>
+                <option className="text-white/80">Wellness Exploration</option>
                 <option className="text-white/80">Wellness Yoga Class</option>
-                <option className="text-white/80">
-                  Spiritual Awakening Journey
-                </option>
                 <option className="text-white/80">Nature Exploration</option>
-                <option className="text-white/80">
-                  Private Sunrise Trekking
-                </option>
-                <option className="text-white/80">
-                  Bali Island Tour (Half Day or Full Day Tour)
-                </option>
-                <option className="text-white/80">Customized Tour</option>
+                <option className="text-white/80">Cultural Exploration</option>
               </select>
             </div>
 
-            <div>
-              <div className="grid grid-cols-12 mt-[40px]  gap-[60px] max-[1024px]:gap-[20px]">
-                <div className="col-span-7 max-[1024px]:col-span-12 max-[1024px]:mb-[30px]">
-                  <div className="sticky top-[0px]">
-                    <div className="relative">
-                      <img
-                        src="/signature/infinity-pool.webp"
-                        alt=""
-                        className="w-full h-[500px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Daily Guest Activities
-                      </h3>
-                      <p className="text-white/60 tracking-[1.2px] leading-[180%] flex-grow">
-                        At Kaamala Resort, each day brings a new way to immerse
-                        yourself in culture, creativity, and connection. From
-                        live cooking shows and Balinese culinary traditions to
-                        mocktail and sushi classes, our curated activities are
-                        designed to delight the senses. Discover the art of
-                        towel folding, craft sacred Canang Sari offerings, or
-                        embrace the beauty of language through our “Learn in
-                        Bahasa” session. Every experience is thoughtfully
-                        created to enrich your journey. <br />
-                        Each day at Kaamala Resort & Spa is an invitation to
-                        rouse the senses and walk closer with the soul of Bali.
-                        From the artistry of noble feasts to the reverent
-                        crafting of sacred offerings, every moment is a verse in
-                        a living poem. Thus is woven a journey of culture,
-                        beauty, and devotion, where thou art both guest and
-                        muse.
-                      </p>
-                    </div>
+            <div className="mt-[40px]">
+              <div className="space-y-12">
+                <div className="space-y-6">
+                  <div className="relative">
+                    <img
+                      src="/signature/infinity-pool.webp"
+                      alt=""
+                      className="w-full max-h-[650px] object-cover"
+                    />
+                    <div className="absolute bg-black/40 inset-0" />
+                  </div>
+                  <div className="space-y-5">
+                    <h2 className="text-[28px]  tracking-[0.5px] capitalize leading-[120%] text-white/80">
+                      Daily Guest Activities
+                    </h2>
+                    <p className="text-white/60 tracking-[1.2px] leading-[180%] flex-grow">
+                      At Kaamala Resort, each day brings a new way to immerse
+                      yourself in culture, creativity, and connection. From live
+                      cooking shows and Balinese culinary traditions to mocktail
+                      and sushi classes, our curated activities are designed to
+                      delight the senses. Discover the art of towel folding,
+                      craft sacred Canang Sari offerings, or embrace the beauty
+                      of language through our “Learn in Bahasa” session. Every
+                      experience is thoughtfully created to enrich your journey.{" "}
+                      <br />
+                      Each day at Kaamala Resort & Spa is an invitation to rouse
+                      the senses and walk closer with the soul of Bali. From the
+                      artistry of noble feasts to the reverent crafting of
+                      sacred offerings, every moment is a verse in a living
+                      poem. Thus is woven a journey of culture, beauty, and
+                      devotion, where thou art both guest and muse.
+                    </p>
                   </div>
                 </div>
-                <div className="col-span-5 space-y-15 max-[1024px]:col-span-12 tracking-[0.5px]">
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/experiences/wellness-yoga.webp"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
+                <section className="space-y-6 max-sm:space-y-8">
+                  <h2 className="text-[28px] tracking-[0.5px] leading-[180%] text-white/80">
+                    Wellness Exploration
+                  </h2>
+                  <div className="space-y-12">
+                    <div className="grid lg:grid-cols-2 gap-12 max-sm:gap-6 items-center">
+                      <div className="relative">
+                        <img
+                          src="/experiences/wellness-yoga.webp"
+                          alt=""
+                          className="w-full h-[350px] object-cover "
+                        />
+                        <div className="absolute inset-0 bg-black/40 " />
+                      </div>
+                      <div className="space-y-4">
+                        <h3 className="text-[22px] text-white/80 tracking-[0.5px] leading-[180%]">
+                          Wellness Yoga Class
+                        </h3>
+                        <p className="text-white/60  leading-[180%]">
+                          Unfolds in a serene venue embraced by the lush beauty
+                          of Ubud’s forest, offering an atmosphere of calm and
+                          renewal. Guided by certified instructors, each session
+                          takes you on a curated journey through Yoga Pilates,
+                          Vinyasa, and Hatha, designed to restore balance of
+                          mind and body.
+                        </p>
+                      </div>
                     </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Wellness Yoga Class
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Unfolds in a serene venue embraced by the lush beauty of
-                        Ubud’s forest, offering an atmosphere of calm and
-                        renewal. Guided by certified instructors, each session
-                        takes you on a curated journey through Yoga Pilates,
-                        Vinyasa, and Hatha, designed to restore balance of mind
-                        and body.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/experiences/spritual.webp"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Spiritual Awakening Journey
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        This journey is a seamless blend of sacred rituals,
-                        mindful movement, and restorative treatments, each
-                        crafted to bring balance and renewal. Guided by the
-                        wisdom of a Balinese healer, it unfolds as an intimate
-                        experience designed to harmonize body, mind, and spirit.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/experiences/nature.webp"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Nature Exploration
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        To revisit the wellspring of life is to return unto
-                        Mother Earth, where all things find their rest. In her
-                        embrace, thou art grounded, and in the hush of
-                        adventure, serenity doth unveil her face.
-                      </p>
+                    <div className="grid lg:grid-cols-2 gap-12 items-center max-sm:gap-6 ">
+                      <div className="space-y-4 order-2 lg:order-1">
+                        <h3 className="text-[22px] text-white/80 tracking-[0.5px] leading-[180%]">
+                          Spiritual Awakening Journey
+                        </h3>
+                        <p className="text-white/60 leading-[180%]">
+                          This journey is a seamless blend of sacred rituals,
+                          mindful movement, and restorative treatments, each
+                          crafted to bring balance and renewal. Guided by the
+                          wisdom of a Balinese healer, it unfolds as an intimate
+                          experience designed to harmonize body, mind, and
+                          spirit.
+                        </p>
+                      </div>
+                      <div className="relative order-1 lg:order-2">
+                        <img
+                          src="/experiences/spritual.webp"
+                          alt=""
+                          className="w-full h-[350px] object-cover "
+                        />
+                        <div className="absolute inset-0 bg-black/40 " />
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
+                </section>
+                <section className="space-y-6 max-sm:space-y-8">
+                  <h2 className="text-[28px] tracking-[0.5px] leading-[180%] text-white/80">
+                    Nature Exploration
+                  </h2>
+                  <div className="space-y-12 ">
+                    {/* Hero Item */}
+                    <div className="grid lg:grid-cols-2 gap-12 items-center max-sm:gap-6">
+                      <div className="relative">
+                        <img
+                          src="/experiences/nature.webp"
+                          alt=""
+                          className="w-full h-[400px] object-cover "
+                        />
+                        <div className="absolute inset-0 bg-black/40 " />
+                      </div>
+                      <div className="space-y-4">
+                        <h3 className="text-[22px] text-white/80 tracking-[0.5px] leading-[180%]">
+                          Private Sunrise Trekking
+                        </h3>
+                        <p className="text-white/60  leading-[180%]">
+                          Begin thy day in gentle grace, where golden light
+                          breaks upon the sacred hills. Let the hush of dawn,
+                          the kiss of morning air, and nature’s quiet majesty
+                          lead thee to a realm where the sun crowns the earth in
+                          splendour.
+                        </p>
+                      </div>
                     </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Private Sunrise Trekking
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Begin thy day in gentle grace, where golden light breaks
-                        upon the sacred hills. Let the hush of dawn, the kiss of
-                        morning air, and nature’s quiet majesty lead thee to a
-                        realm where the sun crowns the earth in splendour.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Bali Island Tour (Half Day or Full Day Tour)
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Unveil the beauty of Bali by walking hand in hand with
-                        her natural wonders and the noble soul of her people.
-                        Partake in the rhythm of daily life, where earth,
-                        culture, and spirit entwine to weave a living poem.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Customized Tour
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Shape your own journey and uncover what is most rare and
-                        wondrous in Bali. Discover her beauty through the
-                        whisper of forests and the timeless grace of her people,
-                        where nature and culture entwine as a living sonnet.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Bali Twin Lake Jungle Trekking & Canoeing
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Trek through lush rainforest trails to breathtaking lake
-                        views, then glide peacefully across the water on a
-                        traditional canoe.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Silver Making
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Enter the timeless craft of silver, where fire and hand
-                        unite in artistry. Guided by a master artisan, thou
-                        shalt shape beauty from raw metal, and carry home a
-                        treasure wrought by thine own touch.
-                      </p>
+
+                    {/* Grid Items */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                      <div className="space-y-3 max-sm:space-y-6">
+                        <div className="relative">
+                          <img
+                            src="/experiences/nature.webp"
+                            alt=""
+                            className="w-full h-[250px] object-cover "
+                          />
+                          <div className="absolute inset-0 bg-black/40 " />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-[20px] tracking-[0.5px] text-white/80 leading-[180%]">
+                            Bali Island Tour (Half Day or Full Day Tour)
+                          </h3>
+                          <p className="text-white/60  leading-[180%]">
+                            Unveil the beauty of Bali by walking hand in hand
+                            with her natural wonders and the noble soul of her
+                            people. Partake in the rhythm of daily life, where
+                            earth, culture, and spirit entwine to weave a living
+                            poem.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-3 max-sm:space-y-6">
+                        <div className="relative">
+                          <img
+                            src="/experiences/nature.webp"
+                            alt=""
+                            className="w-full h-[250px] object-cover "
+                          />
+                          <div className="absolute inset-0 bg-black/40 " />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-[20px] tracking-[0.5px] text-white/80 leading-[180%]">
+                            Customized Tour
+                          </h3>
+                          <p className="text-white/60  leading-[180%]">
+                            Shape your own journey and uncover what is most rare
+                            and wondrous in Bali. Discover her beauty through
+                            the whisper of forests and the timeless grace of her
+                            people, where nature and culture entwine as a living
+                            sonnet.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-3 max-sm:space-y-6">
+                        <div className="relative">
+                          <img
+                            src="/experiences/nature.webp"
+                            alt=""
+                            className="w-full h-[250px] object-cover "
+                          />
+                          <div className="absolute inset-0 bg-black/40 " />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-[20px] tracking-[0.5px] text-white/80 leading-[180%]">
+                            Bali Twin Lake Jungle Trekking & Canoeing
+                          </h3>
+                          <p className="text-white/60  leading-[180%]">
+                            Trek through lush rainforest trails to breathtaking
+                            lake views, then glide peacefully across the water
+                            on a traditional canoe
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
+                </section>
+                <section className="space-y-6 max-sm:space-y-8">
+                  <h2 className="text-[28px] tracking-[0.5px] leading-[180%] text-white/80">
+                    Cultural Exploration
+                  </h2>
+                  <div className="space-y-12 ">
+                    {/* Hero Item */}
+                    <div className="grid lg:grid-cols-2 gap-12 items-center max-sm:gap-6">
+                      <div className="relative">
+                        <img
+                          src="/experiences/meet-healer.webp"
+                          alt=""
+                          className="w-full h-[400px] object-cover "
+                        />
+                        <div className="absolute inset-0 bg-black/40 " />
+                      </div>
+                      <div className="space-y-4">
+                        <h3 className="text-[22px] text-white/80 tracking-[0.5px] leading-[180%]">
+                          Silver Making
+                        </h3>
+                        <p className="text-white/60 leading-[170%]">
+                          Enter the timeless craft of silver, where fire and
+                          hand unite in artistry. Guided by a master artisan,
+                          thou shalt shape beauty from raw metal, and carry home
+                          a treasure wrought by thine own touch.
+                        </p>
+                      </div>
                     </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Village Trekking
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Wander softly through the village lanes, where life
-                        flows gently as the paddy breeze. Greet the folk, walk
-                        the emerald fields, and let each step weave thee closer
-                        to the soul of Bali.
-                      </p>
+
+                    {/* Grid Items */}
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 ">
+                      <div className="space-y-3 max-sm:space-y-6">
+                        <div className="relative">
+                          <img
+                            src="/experiences/meet-healer.webp"
+                            alt=""
+                            className="w-full h-[250px] object-cover "
+                          />
+                          <div className="absolute inset-0 bg-black/40 " />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-[20px] tracking-[0.5px] text-white/80 leading-[180%]">
+                            Village Trekking
+                          </h3>
+                          <p className="text-white/60 leading-[180%]">
+                            Wander softly through the village lanes, where life
+                            flows gently as the paddy breeze. Greet the folk,
+                            walk the emerald fields, and let each step weave
+                            thee closer to the soul of Bali.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-3 max-sm:space-y-6">
+                        <div className="relative">
+                          <img
+                            src="/experiences/meet-healer.webp"
+                            alt=""
+                            className="w-full h-[250px] object-cover "
+                          />
+                          <div className="absolute inset-0 bg-black/40 " />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-[20px] tracking-[0.5px] text-white/80 leading-[180%]">
+                            Ancient Temple Tour
+                          </h3>
+                          <p className="text-white/60  leading-[180%]">
+                            Traverse the hallowed path of Bali’s spirit, where
+                            the cliffs of Uluwatu whisper to the sea, Tanah Lot
+                            rises as a sentinel of the tides, and Taman Ayun
+                            blooms in regal grace—a journey through temples
+                            where divinity and beauty entwine.
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-3 max-sm:space-y-6">
+                        <div className="relative">
+                          <img
+                            src="/experiences/meet-healer.webp"
+                            alt=""
+                            className="w-full h-[250px] object-cover "
+                          />
+                          <div className="absolute inset-0 bg-black/40 " />
+                        </div>
+                        <div className="space-y-3">
+                          <h3 className="text-[20px] tracking-[0.5px] text-white/80 leading-[180%]">
+                            Meet the Healer
+                          </h3>
+                          <p className="text-white/60  leading-[180%]">
+                            In the hush of intimacy, thou art welcomed into
+                            counsel with a Balinese healer, keeper of ancient
+                            wisdom. Thereafter unfolds a sacred rite, where
+                            tradition breathes through touch and chant, guiding
+                            thee into stillness. Thus is revealed a restorative
+                            journey, where body, mind, and spirit are bound once
+                            more in harmony’s eternal embrace.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/signature/shutle.png"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Ancient Temple Tour
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Traverse the hallowed path of Bali’s spirit, where the
-                        cliffs of Uluwatu whisper to the sea, Tanah Lot rises as
-                        a sentinel of the tides, and Taman Ayun blooms in regal
-                        grace—a journey through temples where divinity and
-                        beauty entwine.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/experiences/cooking.webp"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Cooking Class
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        Immerse yourself in the art of culinary culture as you
-                        learn to craft exquisite dishes from the very first
-                        step. Guided by professional chefs, premium spices and
-                        handpicked ingredients are transformed into masterpieces
-                        that delight both the palate and the soul.
-                      </p>
-                    </div>
-                  </div>
-                  <div>
-                    <div className="relative">
-                      <img
-                        src="/experiences/meet-healer.webp"
-                        alt=""
-                        className="w-full h-[280px] object-cover"
-                      />
-                      <div className="absolute bg-black/40 inset-0" />
-                    </div>
-                    <div className="mt-[20px]">
-                      <h3 className="text-[22px] leading-[180%] tracking-[0.5px] mb-3 text-white/80">
-                        Meet the Healer
-                      </h3>
-                      <p className="text-white/60  leading-[180%] flex-grow">
-                        In the hush of intimacy, thou art welcomed into counsel
-                        with a Balinese healer, keeper of ancient wisdom.
-                        Thereafter unfolds a sacred rite, where tradition
-                        breathes through touch and chant, guiding thee into
-                        stillness. Thus is revealed a restorative journey, where
-                        body, mind, and spirit are bound once more in harmony’s
-                        eternal embrace.
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </section>
               </div>
             </div>
           </div>
