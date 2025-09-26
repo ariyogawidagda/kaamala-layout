@@ -170,7 +170,7 @@ export default function KaamalaDinings() {
                 <div className="col-span-7 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/offers/honeymoon.jpg"
+                      src="/offers/honeymoon1.jpg"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
