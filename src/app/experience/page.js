@@ -132,26 +132,50 @@ export default function KaamalaDinings() {
                 )}
               </li> */}
             </ul>
-            <div className="border-b border-white/20 pb-4 md:border-none">
-              <select className=" text-white/80  bg-[#3C5160] tracking-[0.5px] w-full md:hidden ">
-                <option className="text-white/80">
-                  Daily Guest Activities
-                </option>
-                <option className="text-white/80">Wellness Exploration</option>
-                <option className="text-white/80">Wellness Yoga Class</option>
-                <option className="text-white/80">Nature Exploration</option>
-                <option className="text-white/80">Cultural Exploration</option>
-              </select>
+            <div className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#3C5160] border-t border-white/20 shadow-lg">
+              <div className="relative">
+                <select
+                  defaultValue=""
+                  onChange={(e) => {
+                    const target = document.querySelector(`#${e.target.value}`);
+                    target?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="text-white/80 bg-[#3C5160] tracking-[0.5px] w-full py-4 px-4 appearance-none"
+                >
+                  <option value="" disabled hidden>
+                    Explore Experience...
+                  </option>
+                  <option value="daily">Daily Guest Activities</option>
+                  <option value="wellness">Wellness Exploration</option>
+                  <option value="nature">Nature Exploration</option>
+                  <option value="cultural">Cultural Exploration</option>
+                </select>
+
+                {/* Chevron Icon */}
+                <svg
+                  className="w-5 h-5 absolute right-4 top-1/2 transform -translate-y-1/2 text-white/60 pointer-events-none"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </div>
             </div>
 
             <div className="mt-[40px]">
-              <div className="space-y-12">
-                <div className="space-y-6">
+              <div className="space-y-12 max-sm:space-y-0">
+                <div id="daily" className="space-y-6">
                   <div className="relative">
                     <img
                       src="/signature/infinity-pool.webp"
                       alt=""
-                      className="w-full max-h-[650px] object-cover"
+                      className="w-full max-h-[650px] max-sm:h-[280px] object-cover"
                     />
                     <div className="absolute bg-black/40 inset-0" />
                   </div>
@@ -178,7 +202,8 @@ export default function KaamalaDinings() {
                     </p>
                   </div>
                 </div>
-                <section className="space-y-6 max-sm:space-y-8">
+                <div className="hidden max-sm:block border-t border-white/10 my-12"></div>
+                <section id="wellness" className="space-y-6 max-sm:space-y-8">
                   <h2 className="text-[28px] tracking-[0.5px] leading-[180%] text-white/80">
                     Wellness Exploration
                   </h2>
@@ -188,7 +213,7 @@ export default function KaamalaDinings() {
                         <img
                           src="/experiences/wellness-yoga.webp"
                           alt=""
-                          className="w-full h-[350px] object-cover "
+                          className="w-full h-[350px] max-sm:h-[280px] object-cover "
                         />
                         <div className="absolute inset-0 bg-black/40 " />
                       </div>
@@ -224,14 +249,15 @@ export default function KaamalaDinings() {
                         <img
                           src="/experiences/spritual.webp"
                           alt=""
-                          className="w-full h-[350px] object-cover "
+                          className="w-full h-[350px] max-sm:h-[280px] object-cover "
                         />
                         <div className="absolute inset-0 bg-black/40 " />
                       </div>
                     </div>
                   </div>
                 </section>
-                <section className="space-y-6 max-sm:space-y-8">
+                <div className="hidden max-sm:block border-t border-white/10 my-12"></div>
+                <section id="nature" className="space-y-6 max-sm:space-y-8">
                   <h2 className="text-[28px] tracking-[0.5px] leading-[180%] text-white/80">
                     Nature Exploration
                   </h2>
@@ -242,7 +268,7 @@ export default function KaamalaDinings() {
                         <img
                           src="/experiences/nature.webp"
                           alt=""
-                          className="w-full h-[400px] object-cover "
+                          className="w-full h-[400px] max-sm:h-[280px] object-cover "
                         />
                         <div className="absolute inset-0 bg-black/40 " />
                       </div>
@@ -265,9 +291,9 @@ export default function KaamalaDinings() {
                       <div className="space-y-3 max-sm:space-y-6">
                         <div className="relative">
                           <img
-                            src="/experiences/nature.webp"
+                            src="/experiences/island-tour.webp"
                             alt=""
-                            className="w-full h-[250px] object-cover "
+                            className="w-full h-[250px] max-sm:h-[280px] object-cover "
                           />
                           <div className="absolute inset-0 bg-black/40 " />
                         </div>
@@ -287,9 +313,9 @@ export default function KaamalaDinings() {
                       <div className="space-y-3 max-sm:space-y-6">
                         <div className="relative">
                           <img
-                            src="/experiences/nature.webp"
+                            src="/experiences/custom.webp"
                             alt=""
-                            className="w-full h-[250px] object-cover "
+                            className="w-full h-[250px] max-sm:h-[280px] object-cover "
                           />
                           <div className="absolute inset-0 bg-black/40 " />
                         </div>
@@ -311,7 +337,7 @@ export default function KaamalaDinings() {
                           <img
                             src="/experiences/nature.webp"
                             alt=""
-                            className="w-full h-[250px] object-cover "
+                            className="w-full h-[250px] max-sm:h-[280px] object-cover "
                           />
                           <div className="absolute inset-0 bg-black/40 " />
                         </div>
@@ -329,7 +355,8 @@ export default function KaamalaDinings() {
                     </div>
                   </div>
                 </section>
-                <section className="space-y-6 max-sm:space-y-8">
+                <div className="hidden max-sm:block border-t border-white/10 my-12"></div>
+                <section id="cultural" className="space-y-6 max-sm:space-y-8">
                   <h2 className="text-[28px] tracking-[0.5px] leading-[180%] text-white/80">
                     Cultural Exploration
                   </h2>
@@ -340,7 +367,7 @@ export default function KaamalaDinings() {
                         <img
                           src="/experiences/meet-healer.webp"
                           alt=""
-                          className="w-full h-[400px] object-cover "
+                          className="w-full h-[400px] max-sm:h-[280px] object-cover "
                         />
                         <div className="absolute inset-0 bg-black/40 " />
                       </div>
@@ -364,7 +391,7 @@ export default function KaamalaDinings() {
                           <img
                             src="/experiences/meet-healer.webp"
                             alt=""
-                            className="w-full h-[250px] object-cover "
+                            className="w-full h-[250px] max-sm:h-[280px] object-cover "
                           />
                           <div className="absolute inset-0 bg-black/40 " />
                         </div>
@@ -385,7 +412,7 @@ export default function KaamalaDinings() {
                           <img
                             src="/experiences/meet-healer.webp"
                             alt=""
-                            className="w-full h-[250px] object-cover "
+                            className="w-full h-[250px] max-sm:h-[280px] object-cover "
                           />
                           <div className="absolute inset-0 bg-black/40 " />
                         </div>
@@ -407,7 +434,7 @@ export default function KaamalaDinings() {
                           <img
                             src="/experiences/meet-healer.webp"
                             alt=""
-                            className="w-full h-[250px] object-cover "
+                            className="w-full h-[250px] max-sm:h-[280px] object-cover "
                           />
                           <div className="absolute inset-0 bg-black/40 " />
                         </div>

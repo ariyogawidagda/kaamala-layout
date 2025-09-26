@@ -34,33 +34,21 @@ export default function KaamalaDinings() {
           </div>
         </section>
 
-        {/* WHAT MAKES SPECIAL */}
         <section className="py-[80px]  max-[560px]:py-[80px]">
           <div className="container">
-            <ul className="text-white/80 flex justify-center gap-[30px] pb-[20px] border-b-[1px] border-white/20 max-[560px]:text-center">
-              <li>
-                <a href="#">Hot Tub Breakfast</a>
-              </li>
-              <li>
-                <a href="#">Flower Decorations</a>
-              </li>
-              <li>
-                <a href="#">Candle Light Dinner</a>
-              </li>
-            </ul>
-            <div className="mt-[40px] space-y-15">
+            <div className=" ">
               <div className="grid grid-cols-12  bg-white/5">
-                <div className="col-span-7 max-[1024px]:col-span-12">
+                <div className="col-span-6 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/surprises/hottub.webp"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
                     <div className="absolute inset-0 bg-black/40" />
                   </div>
                 </div>
-                <div className="col-span-5 flex justify-between flex-col max-[1024px]:col-span-12  p-5">
+                <div className="col-span-6 flex flex-col justify-center max-[1024px]:col-span-12  p-5">
                   <div className="space-y-4">
                     <h2 className="text-[28px] tracking-[0.5px]  leading-[120%]  text-white/80">
                       Hot Tub Breakfast
@@ -74,24 +62,10 @@ export default function KaamalaDinings() {
                       warmth, nature, and love.
                     </p>
                   </div>
-                  {/* <div className="pb-2">
-                    <a
-                      href={"#"}
-                      className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
-                    >
-                      Discover More{" "}
-                      <img
-                        src={`arrow.png`}
-                        loading="lazy"
-                        alt="arrow"
-                        className="w-[27px] h-auto"
-                      />
-                    </a>
-                  </div> */}
                 </div>
               </div>
               <div className="grid grid-cols-12  bg-white/5">
-                <div className="col-span-5 flex justify-between flex-col max-[1024px]:col-span-12  p-5 max-[1024px]:order-2">
+                <div className="col-span-6 flex justify-center flex-col max-[1024px]:col-span-12  p-5 max-[1024px]:order-2">
                   <div className="space-y-4">
                     <h2 className="text-[28px] tracking-[0.5px]  leading-[120%]  text-white/80">
                       Flower Decorations
@@ -104,25 +78,11 @@ export default function KaamalaDinings() {
                       delight, and mark the beauty of your shared moments.
                     </p>
                   </div>
-                  {/* <div className="pb-2">
-                    <a
-                      href={"#"}
-                      className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
-                    >
-                      Discover More{" "}
-                      <img
-                        src={`arrow.png`}
-                        loading="lazy"
-                        alt="arrow"
-                        className="w-[27px] h-auto"
-                      />
-                    </a>
-                  </div> */}
                 </div>
-                <div className="col-span-7 max-[1024px]:col-span-12">
+                <div className="col-span-6 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/surprises/flower-decor.webp"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
@@ -131,17 +91,17 @@ export default function KaamalaDinings() {
                 </div>
               </div>
               <div className="grid grid-cols-12  bg-white/5">
-                <div className="col-span-7 max-[1024px]:col-span-12">
+                <div className="col-span-6 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/surprises/candle.webp"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
                     <div className="absolute inset-0 bg-black/40" />
                   </div>
                 </div>
-                <div className="col-span-5 flex justify-between flex-col max-[1024px]:col-span-12  p-5">
+                <div className="col-span-6 flex justify-center flex-col max-[1024px]:col-span-12  p-5">
                   <div className="space-y-4">
                     <h2 className="text-[28px] tracking-[0.5px]  leading-[120%]  text-white/80">
                       Candle Light Dinner
@@ -155,24 +115,10 @@ export default function KaamalaDinings() {
                       expression of love.
                     </p>
                   </div>
-                  {/* <div className="pb-2">
-                    <a
-                      href={"#"}
-                      className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
-                    >
-                      Discover More{" "}
-                      <img
-                        src={`arrow.png`}
-                        loading="lazy"
-                        alt="arrow"
-                        className="w-[27px] h-auto"
-                      />
-                    </a>
-                  </div> */}
                 </div>
               </div>
               <div className="grid grid-cols-12  bg-white/5">
-                <div className="col-span-5 flex justify-between flex-col max-[1024px]:col-span-12  p-5 max-[1024px]:order-2">
+                <div className="col-span-6 flex justify-center flex-col max-[1024px]:col-span-12  p-5 max-[1024px]:order-2">
                   <div className="space-y-4">
                     <h2 className="text-[28px] tracking-[0.5px]  leading-[120%]  text-white/80">
                       Romantic Wedding Proposal
@@ -186,25 +132,11 @@ export default function KaamalaDinings() {
                       breathtaking celebration of love and lasting commitment.
                     </p>
                   </div>
-                  {/* <div className="pb-2">
-                    <a
-                      href={"#"}
-                      className="mt-6 flex items-center gap-[10px] text-sm font-medium text-white/80 hover:text-white transition-colors"
-                    >
-                      Discover More{" "}
-                      <img
-                        src={`arrow.png`}
-                        loading="lazy"
-                        alt="arrow"
-                        className="w-[27px] h-auto"
-                      />
-                    </a>
-                  </div> */}
                 </div>
-                <div className="col-span-7 max-[1024px]:col-span-12">
+                <div className="col-span-6 max-[1024px]:col-span-12">
                   <div className="relative">
                     <img
-                      src="/rooms/presidential.webp"
+                      src="/surprises/wedding.webp"
                       alt="tes"
                       className="w-full max-h-[550px] object-cover"
                     />
@@ -213,6 +145,29 @@ export default function KaamalaDinings() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section
+          className=" py-[100px] text-center relative bg-fixed bg-cover bg-top bg-no-repeat "
+          style={{ backgroundImage: "url('/surprises/cta.webp')" }}
+        >
+          <div className="absolute inset-0 bg-black/60" />
+          <div className="relative z-20">
+            <div className="space-y-4 ">
+              <h2 className="text-[28px] tracking-[0.5px]  leading-[120%]  text-white/80">
+                Ready to Create Your Romantic Story?
+              </h2>
+              <p className="text-white/60 max-w-xl mx-auto mb-6 text-[14px] tracking-[0.5px] leading-[180%] ">
+                Contact us today and let us help you arrange the most magical
+                experience for you and your loved one.
+              </p>
+            </div>
+            <a
+              href="/contact"
+              className="inline-block border border-white/80 px-6 py-3 text-white/80 "
+            >
+              Contact Us to Arrange Your Romantic Experience
+            </a>
           </div>
         </section>
       </main>
